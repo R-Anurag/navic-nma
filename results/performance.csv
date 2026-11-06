@@ -1,0 +1,10 @@
+metric,value,unit
+time_to_first_authenticated_fix_cold,102.0,s (median of 20 switch-on times)
+time_to_first_authenticated_fix_warm,74.5,s (median of 20 switch-on times)
+navic_ttfaf_warm,144.0,s
+auth_bandwidth_share_navic,0.28,fraction
+auth_bandwidth_share_galileo,0.307,fraction
+navic_auth_bits_per_second_per_sat,3.3333333333333335,bit/s
+tesla_tag_bits_vs_ed25519_signature_bits,32 vs 512,bits
+cpu_per_tag_verify,1.63,us
+cpu_per_chain_hash,0.32,us

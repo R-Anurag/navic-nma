@@ -1,0 +1,361 @@
+<title>NavIC Spoofing Demo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: cockpit nav display (range rings round IGI) on the left, two receiver instruments + sky plot on the right, timeline underneath */
+:root {
+  --bg: #eaf0f3;
+  --panel: #fbfcfd;
+  --ink: #13212c;
+  --muted: #566977;
+  --line: #c8d4dc;
+  --ring: #a9bccb;
+  --accent: #a3146f;          /* aeronautical-chart magenta */
+  --naive: #eb6834;
+  --tesla: #2a78d6;
+  --hardened: #1baf7a;
+  --good: #16794a;
+  --good-bg: #dcf1e5;
+  --warn: #8a5a00;
+  --warn-bg: #fbecc9;
+  --crit: #b42323;
+  --crit-bg: #f9dcdc;
+  --off: #566977;
+  --off-bg: #e3e9ed;
+  --display: "Barlow Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0b1318; --panel: #111c23; --ink: #e2eaef; --muted: #8ea1ae; --line: #22323d; --ring: #34505f;
+    --accent: #e36bbd; --naive: #d95926; --tesla: #3987e5; --hardened: #199e70;
+    --good: #56d08f; --good-bg: #123526; --warn: #f0b545; --warn-bg: #3a2c0c; --crit: #f07070; --crit-bg: #3d1717;
+    --off: #8ea1ae; --off-bg: #1c2a33; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0b1318; --panel: #111c23; --ink: #e2eaef; --muted: #8ea1ae; --line: #22323d; --ring: #34505f;
+  --accent: #e36bbd; --naive: #d95926; --tesla: #3987e5; --hardened: #199e70;
+  --good: #56d08f; --good-bg: #123526; --warn: #f0b545; --warn-bg: #3a2c0c; --crit: #f07070; --crit-bg: #3d1717;
+  --off: #8ea1ae; --off-bg: #1c2a33; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--ink); font: 16px/1.5 var(--body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 20px 32px;
+}
+.wrap { max-width: 1180px; margin: 0 auto; display: grid; gap: 18px; }
+header { display: grid; gap: 4px; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 700 clamp(30px, 4.5vw, 44px)/1.05 var(--display); letter-spacing: .01em; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); max-width: 70ch; margin: 0; }
+
+.steps { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; }
+.steps button {
+  flex: 0 0 auto; display: flex; gap: 8px; align-items: baseline; cursor: pointer;
+  border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+  border-radius: 6px; padding: 8px 12px; font: 600 15px/1.2 var(--body);
+}
+.steps button span { font: 500 12px var(--mono); color: var(--muted); }
+.steps button[aria-selected="true"] { border-color: var(--accent); box-shadow: inset 0 -3px 0 var(--accent); }
+.steps button:focus-visible, .ctrl button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.brief { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 18px; align-items: start; }
+.brief h2 { font: 600 26px/1.1 var(--display); margin: 0 0 4px; }
+.brief .ask { margin: 0; color: var(--muted); }
+.brief .say { margin: 0; padding-left: 14px; border-left: 2px solid var(--line); color: var(--ink); max-width: 72ch; }
+.brief .say b { font: 500 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: block; }
+
+.main { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 18px; align-items: start; }
+.scope { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px; }
+.scope svg { display: block; width: 100%; height: auto; max-width: 100%; }
+.scope text { font-family: var(--mono); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 6px 6px 2px; font-size: 13px; color: var(--muted); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+
+.side { display: grid; gap: 12px; }
+.rx { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 10px; }
+.rx-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.rx-name { font: 600 20px/1 var(--display); display: flex; align-items: center; gap: 8px; }
+.rx-name i { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.pill { font: 600 13px/1 var(--body); padding: 6px 10px; border-radius: 999px; display: inline-flex; gap: 6px; align-items: center; white-space: nowrap; }
+.pill.good { color: var(--good); background: var(--good-bg); }
+.pill.warn { color: var(--warn); background: var(--warn-bg); }
+.pill.crit { color: var(--crit); background: var(--crit-bg); }
+.pill.off { color: var(--off); background: var(--off-bg); }
+.stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.stat { display: grid; gap: 2px; }
+.stat b { font: 500 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.stat span { font: 500 20px/1.1 var(--mono); font-variant-numeric: tabular-nums; }
+.stat span.bad { color: var(--crit); }
+.log { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; font: 13px/1.35 var(--mono); min-height: 3.6em; }
+.log li { display: grid; grid-template-columns: 5.2em minmax(0, 1fr); gap: 8px; }
+.log li time { color: var(--muted); font-variant-numeric: tabular-nums; }
+.log li.none { display: block; color: var(--muted); }
+.log li.new span { color: var(--crit); }
+
+.skycard { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 12px; align-items: center; }
+.skycard svg { width: 100%; height: auto; display: block; }
+.skycard p { margin: 0; font-size: 14px; color: var(--muted); }
+.skycard h3 { font: 600 18px/1 var(--display); margin: 0 0 6px; color: var(--ink); }
+
+.timeline { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 8px; }
+.ctrl { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.ctrl button {
+  font: 600 15px/1 var(--body); padding: 9px 16px; border-radius: 6px; cursor: pointer;
+  background: var(--accent); color: var(--panel); border: 1px solid var(--accent); min-width: 92px;
+}
+.ctrl button.ghost { background: transparent; color: var(--ink); border-color: var(--line); min-width: 0; }
+.clock { font: 500 22px/1 var(--mono); font-variant-numeric: tabular-nums; }
+.clock small { font-size: 12px; color: var(--muted); margin-left: 6px; }
+.ctrl label { font-size: 14px; color: var(--muted); display: flex; gap: 6px; align-items: center; margin-left: auto; }
+.ctrl select { font: 14px var(--body); padding: 4px 6px; border-radius: 4px; border: 1px solid var(--line); background: var(--panel); color: var(--ink); }
+.track { position: relative; padding-top: 18px; }
+.track input { width: 100%; accent-color: var(--accent); margin: 0; }
+.track .mark { position: absolute; top: 0; transform: translateX(-50%); font: 500 11px var(--mono); color: var(--crit); white-space: nowrap; }
+.track .mark::after { content: ""; display: block; width: 1px; height: 26px; background: var(--crit); margin: 2px auto 0; }
+.keys { font-size: 13px; color: var(--muted); margin: 0; }
+footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; max-width: 90ch; }
+footer p { margin: 0; }
+
+@media (max-width: 860px) {
+  .brief, .main { grid-template-columns: minmax(0, 1fr); }
+  .ctrl label { margin-left: 0; }
+}
+@media (max-width: 460px) {
+  .skycard { grid-template-columns: minmax(0, 1fr); }
+  .skycard svg { max-width: 220px; margin: 0 auto; }
+  .stat span { font-size: 17px; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Simulation · software only · nothing is transmitted</div>
+    <h1>NavIC Spoofing Demo</h1>
+    <p class="sub">A receiver at Indira Gandhi International Airport, Delhi, hears 3 NavIC and 8 Galileo satellites.
+      Watch a naive receiver, a TESLA-only receiver and our hardened receiver (TESLA on both constellations + signed
+      Roughtime clock + replay check) face the same attacks.</p>
+  </header>
+
+  <nav class="steps" id="steps" role="tablist" aria-label="Demo steps"></nav>
+
+  <section class="brief" aria-live="polite">
+    <div><h2 id="s-title"></h2><p class="ask" id="s-ask"></p></div>
+    <p class="say"><b>What happens</b><span id="s-say"></span></p>
+  </section>
+
+  <section class="main">
+    <div class="scope">
+      <svg id="map" viewBox="0 0 600 600" role="img" aria-label="Position plot around IGI airport"></svg>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="side">
+      <div class="rx" id="rx-left"></div>
+      <div class="rx" id="rx-right"></div>
+      <div class="skycard">
+        <svg id="sky" viewBox="0 0 200 200" role="img" aria-label="Sky plot of satellites"></svg>
+        <div><h3>Satellites the hardened receiver trusts</h3>
+          <p>Filled = authenticated and used. Hollow = not used (no data yet, failed a tag, or jammed). Squares are NavIC, circles Galileo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline">
+    <div class="ctrl">
+      <button id="play" type="button">Play</button>
+      <button id="restart" class="ghost" type="button">From start</button>
+      <div class="clock" id="clock">T+00:00</div>
+      <label for="speed">Speed
+        <select id="speed"><option value="15">×15</option><option value="30" selected>×30</option><option value="60">×60</option></select>
+      </label>
+    </div>
+    <div class="track">
+      <div class="mark" id="mark">attack starts</div>
+      <input id="t" type="range" min="0" max="720" step="6" value="600" aria-label="Simulation time in seconds">
+    </div>
+    <p class="keys">Keys: 1 to 5 pick a step, space plays or pauses, arrow keys step through time.</p>
+  </section>
+
+  <footer>
+    <p>Parameters: NavIC L5 chain from ISRO's 2023 proposal (32-bit tags, 128-bit keys, 48 s key period, 96 s disclosure delay, Ed25519 root key);
+      Galileo OSNMA (40-bit tags accumulated to 80 bits, 30 s subframes). The NavIC message layout is modelled, since ISRO's spec is not public.
+      Orbits are circular Keplerian, pseudorange noise 1.5 m.</p>
+    <p>Replay site: Gurugram, about 13 km south-west of IGI. Signed time: local Roughtime-style server, ±0.5 s radius.</p>
+  </footer>
+</div>
+
+<script>
+const DATA = /*DATA*/null;
+const NAMES = { naive: "Naive receiver", tesla: "TESLA only", hardened: "Hardened (ours)" };
+const TRUST = {
+  Authenticated: ["good", "✓", "Authenticated"],
+  Degraded: ["warn", "!", "Degraded"],
+  Untrusted: ["crit", "✕", "Untrusted"],
+  Unchecked: ["off", "–", "No checks"],
+};
+const NS = "http://www.w3.org/2000/svg";
+const $ = (id) => document.getElementById(id);
+const state = { step: 0, t: 600, playing: false, fresh: true, last: 0 };
+
+function el(tag, attrs = {}, text) {
+  const e = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (text != null) e.textContent = text;
+  return e;
+}
+const fmtT = (t) => `T+${String(Math.floor(t / 60)).padStart(2, "0")}:${String(Math.round(t % 60)).padStart(2, "0")}`;
+const fmtErr = (m) => m == null ? "no fix" : m >= 1000 ? `${(m / 1000).toFixed(2)} km` : `${m.toFixed(1)} m`;
+
+function fixAt(track, t) {
+  let i = 0;
+  while (i + 1 < track.length && track[i + 1][0] <= t) i++;
+  return i;
+}
+
+function buildSteps() {
+  DATA.forEach((s, i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.role = "tab"; b.id = `step-${s.id}`;
+    b.innerHTML = `<span>${i + 1}</span>${s.title}`;
+    b.addEventListener("click", () => select(i));
+    $("steps").appendChild(b);
+  });
+}
+
+function select(i) {
+  state.step = i; state.t = 600; state.fresh = true; pause();
+  [...$("steps").children].forEach((b, j) => b.setAttribute("aria-selected", String(j === i)));
+  const s = DATA[i];
+  $("s-title").textContent = s.title; $("s-ask").textContent = s.ask; $("s-say").textContent = s.say;
+  $("mark").hidden = !s.attack_t;
+  if (s.attack_t) $("mark").style.left = `${(s.attack_t / 720) * 100}%`;
+  render();
+}
+
+function drawMap(s, idx) {
+  const svg = $("map"); svg.replaceChildren();
+  const C = 300, R = 270, k = R / s.range_km;
+  const css = getComputedStyle(document.documentElement);
+  const v = (n) => css.getPropertyValue(n).trim();
+  const P = ([e, n]) => {
+    let x = e * k, y = -n * k; const d = Math.hypot(x, y);
+    const off = d > R; if (off) { x *= R / d; y *= R / d; }
+    return [C + x, C + y, off];
+  };
+  for (let r = 1; r <= 4; r++) {
+    svg.appendChild(el("circle", { cx: C, cy: C, r: R * r / 4, fill: "none", stroke: v("--ring"), "stroke-width": r === 4 ? 1.5 : 1, "stroke-dasharray": r === 4 ? "" : "3 5" }));
+    const km = s.range_km * r / 4;
+    svg.appendChild(el("text", { x: C + R * r / 4 - 4, y: C - 6, fill: v("--muted"), "font-size": 12, "text-anchor": "end" }, km < 1 ? `${Math.round(km * 1000)} m` : `${km} km`));
+  }
+  svg.appendChild(el("line", { x1: C - R, y1: C, x2: C + R, y2: C, stroke: v("--ring"), "stroke-width": 0.6 }));
+  svg.appendChild(el("line", { x1: C, y1: C - R, x2: C, y2: C + R, stroke: v("--ring"), "stroke-width": 0.6 }));
+  svg.appendChild(el("text", { x: C, y: 20, fill: v("--muted"), "font-size": 13, "text-anchor": "middle" }, "N"));
+  // airport: two crossing runways
+  const ap = el("g", { stroke: v("--ink"), "stroke-width": 4, "stroke-linecap": "round" });
+  ap.appendChild(el("line", { x1: C - 12, y1: C + 6, x2: C + 12, y2: C - 6 }));
+  ap.appendChild(el("line", { x1: C - 4, y1: C + 12, x2: C + 4, y2: C - 12 }));
+  svg.appendChild(ap);
+  svg.appendChild(el("text", { x: C + 16, y: C + 26, fill: v("--ink"), "font-size": 13 }, "IGI (true position)"));
+  if (s.recording) {
+    const [x, y] = P(s.recording);
+    svg.appendChild(el("rect", { x: x - 7, y: y - 7, width: 14, height: 14, transform: `rotate(45 ${x} ${y})`, fill: "none", stroke: v("--accent"), "stroke-width": 2 }));
+    svg.appendChild(el("text", { x: x + 12, y: y + 22, fill: v("--accent"), "font-size": 13 }, "Gurugram recorder"));
+  }
+  for (const side of ["left", "right"]) {
+    const rx = s[side], col = v(`--${rx.mode}`);
+    const pts = rx.track.slice(Math.max(0, idx - 30), idx + 1).filter((f) => f[1]).map((f) => P(f[1]));
+    if (pts.length > 1) svg.appendChild(el("polyline", { points: pts.map((p) => p.slice(0, 2).join(",")).join(" "), fill: "none", stroke: col, "stroke-width": 2, "stroke-opacity": 0.55, "stroke-linejoin": "round" }));
+    const f = rx.track[idx];
+    if (f[1]) {
+      const [x, y, off] = P(f[1]);
+      svg.appendChild(el("circle", { cx: x, cy: y, r: side === "right" ? 9 : 11, fill: col, stroke: v("--panel"), "stroke-width": 2.5 }));
+      if (off) svg.appendChild(el("text", { x, y: y - 16, fill: col, "font-size": 12, "text-anchor": "middle" }, "off scale"));
+    }
+  }
+}
+
+function drawRx(id, rx, idx, t, total) {
+  const f = rx.track[idx];
+  const [cls, icon, label] = TRUST[f[3]];
+  const alarms = rx.alarms.filter((a) => a[0] <= t).slice(-4).reverse();
+  const wrong = f[2] != null && f[2] > 100 && (f[3] === "Authenticated" || f[3] === "Unchecked");
+  $(id).innerHTML = `
+    <div class="rx-head">
+      <div class="rx-name"><i style="background:var(--${rx.mode})"></i>${NAMES[rx.mode]}</div>
+      <span class="pill ${cls}"><span aria-hidden="true">${icon}</span>${label}</span>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>Position error</b><span class="${wrong ? "bad" : ""}">${f[1] ? fmtErr(f[2]) : "no fix"}</span></div>
+      <div class="stat"><b>Satellites used</b><span>${f[4].length} / ${total}</span></div>
+    </div>
+    <ul class="log">${alarms.length ? alarms.map((a) => `<li class="${t - a[0] < 30 ? "new" : ""}"><time>${fmtT(a[0])}</time><span>${a[1]}${a[2] ? " · " + a[2] : ""}</span></li>`).join("")
+      : `<li class="none">${rx.mode === "naive" ? "No alarms. This receiver has no checks." : "No alarms"}</li>`}</ul>`;
+}
+
+function drawSky(s, idx) {
+  const svg = $("sky"); svg.replaceChildren();
+  const css = getComputedStyle(document.documentElement), v = (n) => css.getPropertyValue(n).trim();
+  const C = 100, R = 86;
+  for (const el_ of [0, 30, 60]) svg.appendChild(el("circle", { cx: C, cy: C, r: R * (90 - el_) / 90, fill: "none", stroke: v("--ring"), "stroke-width": 1 }));
+  svg.appendChild(el("text", { x: C, y: 10, fill: v("--muted"), "font-size": 10, "text-anchor": "middle" }, "N"));
+  const used = new Set(s.right.track[idx][4]);
+  for (const sat of s.sky) {
+    const r = R * (90 - sat.el) / 90, a = sat.az * Math.PI / 180;
+    const x = C + r * Math.sin(a), y = C - r * Math.cos(a);
+    const on = used.has(sat.key);
+    const attrs = { fill: on ? v("--hardened") : v("--panel"), stroke: on ? v("--hardened") : v("--muted"), "stroke-width": 1.8 };
+    svg.appendChild(sat.sys === "NAVIC" ? el("rect", { x: x - 5.5, y: y - 5.5, width: 11, height: 11, ...attrs }) : el("circle", { cx: x, cy: y, r: 5.5, ...attrs }));
+    svg.appendChild(el("text", { x: x + 8, y: y + 3.5, fill: v("--muted"), "font-size": 9 }, sat.name));
+  }
+}
+
+function render() {
+  const s = DATA[state.step];
+  const idx = fixAt(s.right.track, state.t);
+  $("t").value = state.t;
+  $("clock").innerHTML = `${fmtT(state.t)}<small>${s.attack_t && state.t >= s.attack_t ? "under attack" : "GNSS time"}</small>`;
+  drawMap(s, idx);
+  drawRx("rx-left", s.left, idx, state.t, s.sky.length);
+  drawRx("rx-right", s.right, idx, state.t, s.sky.length);
+  drawSky(s, idx);
+  $("legend").innerHTML = ["left", "right"].map((k) => `<span><i style="background:var(--${s[k].mode})"></i>${NAMES[s[k].mode]}</span>`).join("") +
+    `<span>Trail: last 3 minutes of fixes</span>`;
+}
+
+function tick(now) {
+  if (!state.playing) return;
+  const dt = (now - state.last) / 1000; state.last = now;
+  state.t = Math.min(720, state.t + dt * Number($("speed").value));
+  render();
+  if (state.t >= 720) pause(); else requestAnimationFrame(tick);
+}
+function play() {
+  if (state.fresh || state.t >= 720) state.t = 0;
+  state.fresh = false; state.playing = true; $("play").textContent = "Pause";
+  state.last = performance.now(); requestAnimationFrame(tick);
+}
+function pause() { state.playing = false; $("play").textContent = "Play"; }
+
+$("play").addEventListener("click", () => state.playing ? pause() : play());
+$("restart").addEventListener("click", () => { state.fresh = true; play(); });
+$("t").addEventListener("input", (e) => { pause(); state.fresh = false; state.t = Number(e.target.value); render(); });
+document.addEventListener("keydown", (e) => {
+  if (e.target.tagName === "SELECT") return;
+  if (e.key >= "1" && e.key <= String(DATA.length)) select(Number(e.key) - 1);
+  else if (e.key === " " && e.target.tagName !== "BUTTON") { e.preventDefault(); state.playing ? pause() : play(); }
+  else if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    if (e.target.tagName === "INPUT") return;
+    pause(); state.fresh = false; state.t = Math.max(0, Math.min(720, state.t + (e.key === "ArrowRight" ? 6 : -6))); render();
+  }
+});
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", render);
+new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+buildSteps();
+select(1);
+</script>

@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spoof-Resistant NavIC Receiver</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: 1280x720 slides scaled to the window; one idea per slide; figures carry the evidence */
+:root {
+  --bg: #eaf0f3; --panel: #fbfcfd; --ink: #13212c; --muted: #566977; --line: #c8d4dc; --ring: #a9bccb;
+  --accent: #a3146f; --naive: #eb6834; --tesla: #2a78d6; --hardened: #1baf7a;
+  --good: #16794a; --crit: #b42323; --stage: #0f1a21;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--stage); overflow: hidden; }
+.deck { position: absolute; left: 50%; top: 50%; width: 1280px; height: 720px; transform-origin: center; }
+.slide {
+  position: absolute; inset: 0; background: var(--bg); color: var(--ink); font: 26px/1.4 var(--body);
+  padding: 56px 72px; display: none; flex-direction: column; gap: 22px;
+}
+.slide.on { display: flex; }
+.kicker { font: 500 16px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 700 76px/1 var(--display); margin: 0; text-wrap: balance; }
+h2 { font: 700 50px/1.05 var(--display); margin: 0; text-wrap: balance; max-width: 22ch; }
+h3 { font: 600 30px/1.1 var(--display); margin: 0 0 6px; }
+p { margin: 0; max-width: 46ch; }
+ul { margin: 0; padding-left: 1.1em; display: grid; gap: 10px; }
+li::marker { color: var(--accent); }
+.muted { color: var(--muted); }
+.small { font-size: 20px; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; flex: 1; min-height: 0; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px 24px; }
+.num { font: 600 64px/1 var(--mono); color: var(--ink); font-variant-numeric: tabular-nums; }
+.num small { font-size: 24px; color: var(--muted); margin-left: 4px; }
+.fig { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.fig img { max-height: 100%; max-width: 100%; background: #fff; border-radius: 8px; padding: 8px; border: 1px solid var(--line); }
+.foot { position: absolute; left: 72px; right: 72px; bottom: 22px; display: flex; justify-content: space-between; font: 14px var(--mono); color: var(--muted); }
+.src { font: 15px/1.35 var(--body); color: var(--muted); margin-top: auto; max-width: none; }
+.title-slide { background: var(--ink); color: var(--bg); justify-content: center; }
+.title-slide .kicker { color: #e36bbd; }
+.title-slide p { color: #b8c6d0; font-size: 30px; max-width: 40ch; }
+.tag { display: inline-block; font: 600 18px var(--body); padding: 4px 12px; border-radius: 999px; background: #dcf1e5; color: var(--good); }
+.tag.bad { background: #f9dcdc; color: var(--crit); }
+svg text { font-family: var(--body); }
+.nav { position: fixed; right: 16px; bottom: 12px; font: 13px var(--mono); color: #8ea1ae; }
+</style>
+</head>
+<body>
+<div class="deck" id="deck">
+
+<!-- 1 -->
+<section class="slide title-slide">
+  <div class="kicker">INS CCA · Network and Information Security</div>
+  <h1>A NavIC receiver that refuses spoofed positions</h1>
+  <p>Two TESLA authentication schemes, signed internet time, and a replay check. Tested against eight attacks in simulation.</p>
+  <p class="small" style="font-size:20px;margin-top:24px">Anurag Rai · November 2026 · simulation only, no radio transmission</p>
+</section>
+
+<!-- 2 -->
+<section class="slide">
+  <div class="kicker">The incident</div>
+  <h2>Delhi, November 2025: a week of GPS spoofing</h2>
+  <div class="grid3" style="margin-top:20px">
+    <div class="card"><div class="num">7</div><p class="small">flights diverted to Jaipur in one night after airlines reported spoofed positions near IGI airport</p></div>
+    <div class="card"><div class="num">465</div><p class="small">interference and spoofing incidents in India's border regions, Nov 2023 to Feb 2025</p></div>
+    <div class="card"><div class="num">10<small>min</small></div><p class="small">DGCA's new deadline for reporting a spoofing event</p></div>
+  </div>
+  <p class="muted" style="max-width:60ch">Aviation, telecom network timing and AIS-140 fleet trackers all trust whatever position and time the satellite receiver reports.</p>
+</section>
+
+<!-- 3 -->
+<section class="slide">
+  <div class="kicker">How spoofing works</div>
+  <h2>Civil satellite signals carry no signature</h2>
+  <div class="grid2">
+    <svg viewBox="0 0 560 360" width="560" height="360" role="img" aria-label="Spoofer overpowers satellite signal">
+      <g fill="var(--tesla)"><rect x="40" y="20" width="44" height="22" rx="3"/><rect x="250" y="8" width="44" height="22" rx="3"/><rect x="460" y="20" width="44" height="22" rx="3"/></g>
+      <g stroke="var(--tesla)" stroke-width="2" stroke-dasharray="6 6" fill="none"><path d="M62 44 L270 290"/><path d="M272 32 L280 290"/><path d="M482 44 L290 290"/></g>
+      <text x="300" y="140" fill="var(--tesla)" font-size="18">real signals, very weak</text>
+      <rect x="60" y="250" width="70" height="44" rx="6" fill="var(--naive)"/>
+      <text x="95" y="320" text-anchor="middle" fill="var(--naive)" font-size="18" font-weight="600">spoofer</text>
+      <path d="M132 272 L248 296" stroke="var(--naive)" stroke-width="6" fill="none"/>
+      <text x="150" y="250" fill="var(--naive)" font-size="18">fake signals, stronger</text>
+      <rect x="250" y="282" width="62" height="40" rx="6" fill="var(--ink)"/>
+      <text x="281" y="346" text-anchor="middle" fill="var(--ink)" font-size="18" font-weight="600">receiver</text>
+      <text x="330" y="305" fill="var(--muted)" font-size="18">locks onto the louder one</text>
+    </svg>
+    <div style="display:grid;gap:18px">
+      <div><h3>Jamming</h3><p class="small">Noise drowns the signal. The receiver knows it has no fix.</p></div>
+      <div><h3>Spoofing</h3><p class="small">Forged signals with false data. The receiver shows a confident, wrong position.</p></div>
+      <div><h3>Meaconing (replay)</h3><p class="small">Real signals recorded and rebroadcast late. Every bit is genuine, only the timing is wrong.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide">
+  <div class="kicker">The gap</div>
+  <h2>What exists, and what's missing</h2>
+  <div class="grid2">
+    <ul>
+      <li>Galileo OSNMA authenticates navigation data. Initial service since <b>24 July 2025</b>.</li>
+      <li>ISRO designed TESLA authentication for NavIC and test-transmitted it from IRNSS-1D and 1I in <b>2023</b>. Not a launched service.</li>
+      <li>NavIC is down to <b>3</b> working satellites. A position needs 4, so NavIC alone can't give one.</li>
+    </ul>
+    <div class="card">
+      <h3>So "add TESLA to NavIC" is not new.</h3>
+      <p class="small">The contribution is the <b>receiver</b>: one trust policy across two constellations, a TESLA clock that can't be dragged, and a check for the replay attack TESLA can't see.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide">
+  <div class="kicker">Borrowed crypto</div>
+  <h2>Two ideas from internet security</h2>
+  <div class="grid2">
+    <div class="card"><h3>TESLA</h3><p class="small">Broadcast authentication from multicast networking research. A cheap MAC now, the key disclosed later. Adopted by Galileo OSNMA and ISRO's NavIC proposal.</p>
+      <p class="small muted" style="margin-top:12px">Weakness: secure only if the receiver knows the time well enough to reject a key that is already public.</p></div>
+    <div class="card"><h3>Roughtime</h3><p class="small">Signed time from internet security. The client sends a random nonce; the server signs nonce + time + uncertainty with Ed25519.</p>
+      <p class="small muted" style="margin-top:12px">Gives TESLA the trusted clock it assumes, from a source the radio attacker can't touch.</p></div>
+  </div>
+</section>
+
+<!-- 6 -->
+<section class="slide">
+  <div class="kicker">TESLA in one picture</div>
+  <h2>Sign now with a secret key, reveal the key 96 s later</h2>
+  <svg viewBox="0 0 1136 300" width="1136" height="300" role="img" aria-label="TESLA key chain">
+    <g font-size="22" text-anchor="middle">
+      <rect x="10" y="40" width="120" height="56" rx="8" fill="var(--accent)"/><text x="70" y="76" fill="#fff" font-weight="600">K0 root</text>
+      <rect x="250" y="40" width="120" height="56" rx="8" fill="var(--panel)" stroke="var(--ink)"/><text x="310" y="76" fill="var(--ink)">K1</text>
+      <rect x="490" y="40" width="120" height="56" rx="8" fill="var(--panel)" stroke="var(--ink)"/><text x="550" y="76" fill="var(--ink)">K2</text>
+      <rect x="730" y="40" width="120" height="56" rx="8" fill="var(--panel)" stroke="var(--ink)"/><text x="790" y="76" fill="var(--ink)">K3</text>
+      <rect x="970" y="40" width="150" height="56" rx="8" fill="var(--panel)" stroke="var(--ink)"/><text x="1045" y="76" fill="var(--ink)">… Kn (seed)</text>
+    </g>
+    <g stroke="var(--muted)" stroke-width="2" fill="var(--muted)">
+      <path d="M248 68 H136"/><path d="M136 68 l10 -6 v12z"/><path d="M488 68 H376"/><path d="M376 68 l10 -6 v12z"/>
+      <path d="M728 68 H616"/><path d="M616 68 l10 -6 v12z"/><path d="M968 68 H856"/><path d="M856 68 l10 -6 v12z"/>
+    </g>
+    <text x="560" y="26" text-anchor="middle" font-size="19" fill="var(--muted)">K(i) = SHA-256(K(i+1)), 128 bits. Anyone can hash forward to check; nobody can go backward.</text>
+    <text x="12" y="124" font-size="18" fill="var(--accent)">signed with Ed25519</text>
+    <g font-size="20">
+      <rect x="250" y="170" width="360" height="44" rx="6" fill="var(--panel)" stroke="var(--line)"/>
+      <text x="264" y="199" fill="var(--ink)">t = 48 s: nav data + tag = HMAC(K1)[:32]</text>
+      <rect x="730" y="170" width="390" height="44" rx="6" fill="var(--panel)" stroke="var(--line)"/>
+      <text x="744" y="199" fill="var(--ink)">t = 144 s: K1 disclosed → verify tag</text>
+      <path d="M612 192 H724" stroke="var(--accent)" stroke-width="2"/><path d="M724 192 l-10 -6 v12z" fill="var(--accent)"/>
+      <text x="668" y="240" text-anchor="middle" font-size="18" fill="var(--accent)">96 s</text>
+    </g>
+    <text x="10" y="284" font-size="20" fill="var(--ink)">Security condition: accept a tag only if  local time + clock uncertainty  &lt;  its key's disclosure time.</text>
+  </svg>
+  <p class="src">32-bit tag vs 512-bit Ed25519 signature per message: TESLA is 16× cheaper on a 25 bit/s channel. Parameters: ISRO ICG-17 (2023), L5/S chain.</p>
+</section>
+
+<!-- 7 -->
+<section class="slide">
+  <div class="kicker">Architecture</div>
+  <h2>Four inputs, four checks, one trust policy</h2>
+  <svg viewBox="0 0 1136 420" width="1136" height="420" role="img" aria-label="Receiver architecture">
+    <g font-size="20">
+      <text x="10" y="22" fill="var(--naive)" font-weight="600">attacker can tamper with</text>
+      <g fill="var(--panel)" stroke="var(--naive)" stroke-width="2">
+        <rect x="10" y="40" width="230" height="64" rx="8"/><rect x="10" y="130" width="230" height="64" rx="8"/>
+        <rect x="10" y="220" width="230" height="64" rx="8"/><rect x="10" y="310" width="230" height="64" rx="8"/>
+      </g>
+      <g fill="var(--ink)"><text x="26" y="80">NavIC NMA (msg 10)</text><text x="26" y="170">Galileo OSNMA</text><text x="26" y="260">Pseudoranges</text><text x="26" y="350">Roughtime reply</text></g>
+      <g fill="var(--panel)" stroke="var(--ink)" stroke-width="1.5">
+        <rect x="330" y="40" width="290" height="64" rx="8"/><rect x="330" y="130" width="290" height="64" rx="8"/>
+        <rect x="330" y="220" width="290" height="64" rx="8"/><rect x="330" y="310" width="290" height="64" rx="8"/>
+      </g>
+      <g fill="var(--ink)"><text x="346" y="80">Root key signature (Ed25519)</text><text x="346" y="170">Key chain + tag (HMAC)</text><text x="346" y="260">Replay: signal vs signed time</text><text x="346" y="350">Clock jump + signed time</text></g>
+      <g stroke="var(--muted)" stroke-width="2" fill="none"><path d="M240 72 H330"/><path d="M240 162 H330"/><path d="M240 252 H330"/><path d="M240 342 H330"/>
+        <path d="M620 72 H690 V340 H620"/><path d="M620 162 H690"/><path d="M620 252 H690"/><path d="M690 207 H740"/></g>
+      <rect x="740" y="160" width="200" height="94" rx="10" fill="var(--accent)"/>
+      <text x="840" y="200" fill="#fff" text-anchor="middle" font-weight="600">Trust policy</text>
+      <text x="840" y="228" fill="#fff" text-anchor="middle" font-size="17">per-satellite state</text>
+      <path d="M940 207 H990" stroke="var(--muted)" stroke-width="2"/>
+      <rect x="990" y="160" width="140" height="94" rx="10" fill="var(--ink)"/>
+      <text x="1060" y="200" fill="var(--bg)" text-anchor="middle">Position</text><text x="1060" y="228" fill="var(--bg)" text-anchor="middle" font-size="17">+ trust level</text>
+      <text x="740" y="300" fill="var(--good)" font-size="18">Authenticated: ≥4 authenticated sats, clock OK</text>
+      <text x="740" y="328" fill="#8a5a00" font-size="18">Degraded: 1 to 3 authenticated sats</text>
+      <text x="740" y="356" fill="var(--crit)" font-size="18">Untrusted: clock jump, replay, or none</text>
+    </g>
+  </svg>
+  <p class="src">Only satellites the trust policy marks authenticated reach the least-squares position solver.</p>
+</section>
+
+<!-- 8 -->
+<section class="slide">
+  <div class="kicker">What's new</div>
+  <h2>Three pieces the existing designs don't have</h2>
+  <div class="grid3">
+    <div class="card"><h3>1 · Dual-TESLA receiver</h3><p class="small">Galileo (40-bit tags) and NavIC (32-bit) verified side by side. Position from authenticated satellites only, reported with a trust level.</p></div>
+    <div class="card"><h3>2 · Signed-time bootstrap</h3><p class="small">Roughtime at cold start and every 30 s; a free-running oscillator flags any sudden clock jump.</p></div>
+    <div class="card"><h3>3 · Replay detection</h3><p class="small">MACs prove who wrote the data, not when it arrived. Flag signals whose time disagrees with signed time by more than 1 s.</p></div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide">
+  <div class="kicker">Results · 1,890 simulated runs</div>
+  <h2>The hardened receiver was never fooled at the headline severities</h2>
+  <div class="fig"><img src="../figures/fig1_attack_summary.png" alt="Bar chart of time fooled per attack and receiver"></div>
+</section>
+
+<!-- 10 -->
+<section class="slide">
+  <div class="kicker">Why the clock matters</div>
+  <h2>TESLA alone falls to a 5 s clock drag</h2>
+  <div class="fig"><img src="../figures/fig3_a5_clock_drag.png" alt="Clock drag results"></div>
+  <p class="src">A clock running 5 s slow (A4) or dragged by 5 s (A5) lets an attacker reuse already-disclosed keys. Signed time keeps the error under ~1 s, below what the forgery needs.</p>
+</section>
+
+<!-- 11 -->
+<section class="slide">
+  <div class="kicker">Expected loss</div>
+  <h2>Replays under 1 s still get through</h2>
+  <div class="fig"><img src="../figures/fig2_a6_replay.png" alt="Replay results vs delay"></div>
+  <p class="src">Detection is 0% at 0.3 s, 45% at 1 s, 100% from 1.5 s (40 seeds). Internet time is only good to about a second; closing the gap needs spreading-code authentication.</p>
+</section>
+
+<!-- 12 -->
+<section class="slide">
+  <div class="kicker">Cost</div>
+  <h2>Cheap enough for a low-cost receiver</h2>
+  <div class="grid3">
+    <div class="card"><div class="num">1.8<small>µs</small></div><p class="small">to verify one tag on a laptop (HMAC-SHA-256)</p></div>
+    <div class="card"><div class="num">3.3<small>bit/s</small></div><p class="small">NavIC authentication bits per satellite (32-bit tag + 128-bit key every 48 s)</p></div>
+    <div class="card"><div class="num">144<small>s</small></div><p class="small">until NavIC satellites are authenticated, matching ISRO's figure. Galileo: 75 s warm, 102 s cold (median)</p></div>
+  </div>
+</section>
+
+<!-- 13 -->
+<section class="slide">
+  <div class="kicker">Limits</div>
+  <h2>What this does not stop</h2>
+  <div class="grid2">
+    <ul>
+      <li><b>Jamming.</b> No cryptography helps against noise.</li>
+      <li><b>Replay under ~1 s</b> (shown above).</li>
+      <li><b>Downgrade</b> works if the pilot ignores the Degraded warning.</li>
+      <li><b>Pseudorange spoofing</b> with genuine data: needs spreading-code authentication.</li>
+    </ul>
+    <ul>
+      <li>NavIC message layout is <b>modelled</b>; ISRO's spec is not public.</li>
+      <li>Simulated orbits are circular; no real RF.</li>
+      <li>Future work: spreading-code authentication, post-quantum root keys.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 14 -->
+<section class="slide">
+  <div class="kicker">Live demo · under 5 minutes</div>
+  <h2>Watch the attacks happen</h2>
+  <div class="grid2">
+    <ul>
+      <li>Clean sky: trust level Authenticated</li>
+      <li>A1 tampering: naive jumps 3.4 km, hardened drops NavIC and holds</li>
+      <li>A5 clock drag: signed-time check fires</li>
+      <li>A6 replay 5 s: caught</li>
+      <li>A6 replay 0.3 s: missed, and why</li>
+    </ul>
+    <div class="card"><p class="small">Open <b>demo/demo.html</b> (works offline), or run</p>
+      <p style="font:22px var(--mono);margin-top:10px">make demo</p>
+      <p class="small muted" style="margin-top:10px">for the same five steps in the terminal.</p></div>
+  </div>
+</section>
+
+<!-- 15 -->
+<section class="slide title-slide">
+  <div class="kicker">Questions</div>
+  <h1>Authenticate the data, then authenticate the time</h1>
+  <p>Code, tests, experiments and figures: one command each. <span style="font-family:var(--mono)">make test · make experiments · make figures</span></p>
+</section>
+
+</div>
+<div class="nav" id="nav"></div>
+<script>
+const slides = [...document.querySelectorAll(".slide")];
+let i = Math.max(0, Math.min(slides.length - 1, (parseInt(location.hash.slice(1)) || 1) - 1));
+function fit() {
+  const s = Math.min(innerWidth / 1280, innerHeight / 720);
+  document.getElementById("deck").style.transform = `translate(-50%, -50%) scale(${s})`;
+}
+function show(n) {
+  i = Math.max(0, Math.min(slides.length - 1, n));
+  slides.forEach((s, k) => s.classList.toggle("on", k === i));
+  document.getElementById("nav").textContent = `${i + 1} / ${slides.length}  ·  ← → to move`;
+  history.replaceState(null, "", `#${i + 1}`);
+}
+addEventListener("keydown", (e) => {
+  if (["ArrowRight", "PageDown", " "].includes(e.key)) show(i + 1);
+  if (["ArrowLeft", "PageUp"].includes(e.key)) show(i - 1);
+  if (e.key === "Home") show(0);
+  if (e.key === "End") show(slides.length - 1);
+});
+addEventListener("click", (e) => show(i + (e.clientX > innerWidth / 3 ? 1 : -1)));
+addEventListener("resize", fit);
+fit(); show(i);
+</script>
+</body>
+</html>

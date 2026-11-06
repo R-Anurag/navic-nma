@@ -1,0 +1,20 @@
+# Experiment matrix: every attack x every receiver mode x severities x seeds.
+seeds: [0, 1, 2, 3, 4]
+modes: [naive, tesla, hardened]
+attacks:
+  A1: [1, 5, 10, 25, 50]                # ephemeris shift, km
+  A2: [0.1, 0.5, 1.0]                   # fraction of keys forged
+  A3: [10]                              # ephemeris shift under attacker chain, km
+  A4: [0, 0.5, 1, 2, 5, 10, 30, 60]     # receiver clock error (slow), s
+  A5: [0.25, 0.5, 1, 2, 5, 10, 30, 100] # clock drag, s
+  A6: [0.1, 0.2, 0.3, 0.5, 0.7, 1.0, 1.5, 2, 5, 10, 30, 60]  # replay delay, s
+  A7: [0.25, 0.5, 0.75, 1.0]            # fraction of authenticated satellites jammed
+replay_seeds: 40                        # A6 is probabilistic near the threshold
+headline:                               # one severity per attack for the summary chart
+  A1: 50
+  A2: 1.0
+  A3: 10
+  A4: 5
+  A5: 10
+  A6: 5
+  A7: 1.0

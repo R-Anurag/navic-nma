@@ -1,0 +1,1891 @@
+attack,severity,mode,seed,detected,time_to_detect_s,fooled_frac,max_presented_err_m,median_presented_err_m,final_trust,max_trusted_clock_err_s,first_auth_fix_s,alarm_kinds
+A1,1,naive,0,0,,0.0,72.3,66.16,Unchecked,0.0,,
+A1,1,naive,1,0,,0.0,74.5,65.88,Unchecked,0.0,,
+A1,1,naive,2,0,,0.0,71.9,66.12,Unchecked,0.0,,
+A1,1,naive,3,0,,0.0,74.0,66.08,Unchecked,0.0,,
+A1,1,naive,4,0,,0.0,74.0,66.06,Unchecked,0.0,,
+A1,1,tesla,0,1,132.0,0.0,8.1,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,1,tesla,1,1,132.0,0.0,7.8,2.72,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,1,tesla,2,1,132.0,0.0,8.9,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,1,tesla,3,1,132.0,0.0,10.5,2.69,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,1,tesla,4,1,132.0,0.0,9.2,2.97,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,1,hardened,0,1,132.0,0.0,8.1,2.43,Authenticated,0.009,90.0,"tag failed, satellite dropped"
+A1,1,hardened,1,1,132.0,0.0,7.8,2.72,Authenticated,0.004,90.0,"tag failed, satellite dropped"
+A1,1,hardened,2,1,132.0,0.0,8.9,2.43,Authenticated,0.268,90.0,"tag failed, satellite dropped"
+A1,1,hardened,3,1,132.0,0.0,10.5,2.69,Authenticated,0.101,90.0,"tag failed, satellite dropped"
+A1,1,hardened,4,1,132.0,0.0,9.2,2.97,Authenticated,0.347,90.0,"tag failed, satellite dropped"
+A1,5,naive,0,0,,0.915,340.4,332.72,Unchecked,0.0,,
+A1,5,naive,1,0,,0.915,342.6,332.35,Unchecked,0.0,,
+A1,5,naive,2,0,,0.915,339.4,332.34,Unchecked,0.0,,
+A1,5,naive,3,0,,0.915,342.1,332.6,Unchecked,0.0,,
+A1,5,naive,4,0,,0.915,339.6,332.15,Unchecked,0.0,,
+A1,5,tesla,0,1,132.0,0.0,8.1,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,5,tesla,1,1,132.0,0.0,7.8,2.72,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,5,tesla,2,1,132.0,0.0,8.9,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,5,tesla,3,1,132.0,0.0,10.5,2.69,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,5,tesla,4,1,132.0,0.0,9.2,2.97,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,5,hardened,0,1,132.0,0.0,8.1,2.43,Authenticated,0.009,90.0,"tag failed, satellite dropped"
+A1,5,hardened,1,1,132.0,0.0,7.8,2.72,Authenticated,0.004,90.0,"tag failed, satellite dropped"
+A1,5,hardened,2,1,132.0,0.0,8.9,2.43,Authenticated,0.268,90.0,"tag failed, satellite dropped"
+A1,5,hardened,3,1,132.0,0.0,10.5,2.69,Authenticated,0.101,90.0,"tag failed, satellite dropped"
+A1,5,hardened,4,1,132.0,0.0,9.2,2.97,Authenticated,0.347,90.0,"tag failed, satellite dropped"
+A1,10,naive,0,0,,0.915,676.6,666.51,Unchecked,0.0,,
+A1,10,naive,1,0,,0.915,678.1,665.73,Unchecked,0.0,,
+A1,10,naive,2,0,,0.915,674.9,666.4,Unchecked,0.0,,
+A1,10,naive,3,0,,0.915,677.8,666.69,Unchecked,0.0,,
+A1,10,naive,4,0,,0.915,674.3,665.88,Unchecked,0.0,,
+A1,10,tesla,0,1,132.0,0.0,8.1,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,10,tesla,1,1,132.0,0.0,7.8,2.72,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,10,tesla,2,1,132.0,0.0,8.9,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,10,tesla,3,1,132.0,0.0,10.5,2.69,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,10,tesla,4,1,132.0,0.0,9.2,2.97,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,10,hardened,0,1,132.0,0.0,8.1,2.43,Authenticated,0.009,90.0,"tag failed, satellite dropped"
+A1,10,hardened,1,1,132.0,0.0,7.8,2.72,Authenticated,0.004,90.0,"tag failed, satellite dropped"
+A1,10,hardened,2,1,132.0,0.0,8.9,2.43,Authenticated,0.268,90.0,"tag failed, satellite dropped"
+A1,10,hardened,3,1,132.0,0.0,10.5,2.69,Authenticated,0.101,90.0,"tag failed, satellite dropped"
+A1,10,hardened,4,1,132.0,0.0,9.2,2.97,Authenticated,0.347,90.0,"tag failed, satellite dropped"
+A1,25,naive,0,0,,0.915,1687.7,1668.31,Unchecked,0.0,,
+A1,25,naive,1,0,,0.915,1687.3,1669.13,Unchecked,0.0,,
+A1,25,naive,2,0,,0.915,1684.9,1669.97,Unchecked,0.0,,
+A1,25,naive,3,0,,0.915,1687.6,1669.95,Unchecked,0.0,,
+A1,25,naive,4,0,,0.915,1685.3,1669.76,Unchecked,0.0,,
+A1,25,tesla,0,1,132.0,0.0,8.1,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,25,tesla,1,1,132.0,0.0,7.8,2.72,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,25,tesla,2,1,132.0,0.0,8.9,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,25,tesla,3,1,132.0,0.0,10.5,2.69,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,25,tesla,4,1,132.0,0.0,9.2,2.97,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,25,hardened,0,1,132.0,0.0,8.1,2.43,Authenticated,0.009,90.0,"tag failed, satellite dropped"
+A1,25,hardened,1,1,132.0,0.0,7.8,2.72,Authenticated,0.004,90.0,"tag failed, satellite dropped"
+A1,25,hardened,2,1,132.0,0.0,8.9,2.43,Authenticated,0.268,90.0,"tag failed, satellite dropped"
+A1,25,hardened,3,1,132.0,0.0,10.5,2.69,Authenticated,0.101,90.0,"tag failed, satellite dropped"
+A1,25,hardened,4,1,132.0,0.0,9.2,2.97,Authenticated,0.347,90.0,"tag failed, satellite dropped"
+A1,50,naive,0,0,,0.915,3381.1,3349.19,Unchecked,0.0,,
+A1,50,naive,1,0,,0.915,3377.7,3350.52,Unchecked,0.0,,
+A1,50,naive,2,0,,0.915,3377.7,3349.58,Unchecked,0.0,,
+A1,50,naive,3,0,,0.915,3379.9,3348.8,Unchecked,0.0,,
+A1,50,naive,4,0,,0.915,3378.5,3348.67,Unchecked,0.0,,
+A1,50,tesla,0,1,132.0,0.0,8.1,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,50,tesla,1,1,132.0,0.0,7.8,2.72,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,50,tesla,2,1,132.0,0.0,8.9,2.43,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,50,tesla,3,1,132.0,0.0,10.5,2.69,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,50,tesla,4,1,132.0,0.0,9.2,2.97,Authenticated,0.0,90.0,"tag failed, satellite dropped"
+A1,50,hardened,0,1,132.0,0.0,8.1,2.43,Authenticated,0.009,90.0,"tag failed, satellite dropped"
+A1,50,hardened,1,1,132.0,0.0,7.8,2.72,Authenticated,0.004,90.0,"tag failed, satellite dropped"
+A1,50,hardened,2,1,132.0,0.0,8.9,2.43,Authenticated,0.268,90.0,"tag failed, satellite dropped"
+A1,50,hardened,3,1,132.0,0.0,10.5,2.69,Authenticated,0.101,90.0,"tag failed, satellite dropped"
+A1,50,hardened,4,1,132.0,0.0,9.2,2.97,Authenticated,0.347,90.0,"tag failed, satellite dropped"
+A2,0.1,naive,0,0,,0.0,6.8,2.3,Unchecked,0.0,,
+A2,0.1,naive,1,0,,0.0,8.9,2.39,Unchecked,0.0,,
+A2,0.1,naive,2,0,,0.0,7.3,2.1,Unchecked,0.0,,
+A2,0.1,naive,3,0,,0.0,7.5,2.69,Unchecked,0.0,,
+A2,0.1,naive,4,0,,0.0,8.6,2.67,Unchecked,0.0,,
+A2,0.1,tesla,0,1,36.0,0.0,6.8,2.3,Authenticated,0.0,90.0,key chain check failed
+A2,0.1,tesla,1,1,84.0,0.0,8.9,2.39,Authenticated,0.0,90.0,key chain check failed
+A2,0.1,tesla,2,1,84.0,0.0,7.3,2.1,Authenticated,0.0,90.0,key chain check failed
+A2,0.1,tesla,3,1,132.0,0.0,7.5,2.69,Authenticated,0.0,90.0,key chain check failed
+A2,0.1,tesla,4,1,84.0,0.0,8.6,2.67,Authenticated,0.0,90.0,key chain check failed
+A2,0.1,hardened,0,1,36.0,0.0,6.8,2.3,Authenticated,0.009,90.0,key chain check failed
+A2,0.1,hardened,1,1,84.0,0.0,8.9,2.39,Authenticated,0.004,90.0,key chain check failed
+A2,0.1,hardened,2,1,84.0,0.0,7.3,2.1,Authenticated,0.268,90.0,key chain check failed
+A2,0.1,hardened,3,1,132.0,0.0,7.5,2.69,Authenticated,0.101,90.0,key chain check failed
+A2,0.1,hardened,4,1,84.0,0.0,8.6,2.67,Authenticated,0.347,90.0,key chain check failed
+A2,0.5,naive,0,0,,0.0,6.8,2.3,Unchecked,0.0,,
+A2,0.5,naive,1,0,,0.0,8.9,2.39,Unchecked,0.0,,
+A2,0.5,naive,2,0,,0.0,7.3,2.1,Unchecked,0.0,,
+A2,0.5,naive,3,0,,0.0,7.5,2.69,Unchecked,0.0,,
+A2,0.5,naive,4,0,,0.0,8.6,2.67,Unchecked,0.0,,
+A2,0.5,tesla,0,1,36.0,0.0,6.8,2.3,Authenticated,0.0,90.0,key chain check failed
+A2,0.5,tesla,1,1,36.0,0.0,8.9,2.39,Authenticated,0.0,90.0,key chain check failed
+A2,0.5,tesla,2,1,36.0,0.0,7.3,2.1,Authenticated,0.0,90.0,key chain check failed
+A2,0.5,tesla,3,1,132.0,0.0,7.5,2.69,Authenticated,0.0,90.0,key chain check failed
+A2,0.5,tesla,4,1,36.0,0.0,8.6,2.67,Authenticated,0.0,90.0,key chain check failed
+A2,0.5,hardened,0,1,36.0,0.0,6.8,2.3,Authenticated,0.009,90.0,key chain check failed
+A2,0.5,hardened,1,1,36.0,0.0,8.9,2.39,Authenticated,0.004,90.0,key chain check failed
+A2,0.5,hardened,2,1,36.0,0.0,7.3,2.1,Authenticated,0.268,90.0,key chain check failed
+A2,0.5,hardened,3,1,132.0,0.0,7.5,2.69,Authenticated,0.101,90.0,key chain check failed
+A2,0.5,hardened,4,1,36.0,0.0,8.6,2.67,Authenticated,0.347,90.0,key chain check failed
+A2,1.0,naive,0,0,,0.0,6.8,2.3,Unchecked,0.0,,
+A2,1.0,naive,1,0,,0.0,8.9,2.39,Unchecked,0.0,,
+A2,1.0,naive,2,0,,0.0,7.3,2.1,Unchecked,0.0,,
+A2,1.0,naive,3,0,,0.0,7.5,2.69,Unchecked,0.0,,
+A2,1.0,naive,4,0,,0.0,8.6,2.67,Unchecked,0.0,,
+A2,1.0,tesla,0,1,36.0,0.0,8.1,2.42,Authenticated,0.0,90.0,key chain check failed
+A2,1.0,tesla,1,1,36.0,0.0,7.8,2.54,Authenticated,0.0,90.0,key chain check failed
+A2,1.0,tesla,2,1,36.0,0.0,8.9,2.22,Authenticated,0.0,90.0,key chain check failed
+A2,1.0,tesla,3,1,36.0,0.0,10.5,2.61,Authenticated,0.0,90.0,key chain check failed
+A2,1.0,tesla,4,1,36.0,0.0,9.2,2.73,Authenticated,0.0,90.0,key chain check failed
+A2,1.0,hardened,0,1,36.0,0.0,8.1,2.42,Authenticated,0.009,90.0,key chain check failed
+A2,1.0,hardened,1,1,36.0,0.0,7.8,2.54,Authenticated,0.004,90.0,key chain check failed
+A2,1.0,hardened,2,1,36.0,0.0,8.9,2.22,Authenticated,0.268,90.0,key chain check failed
+A2,1.0,hardened,3,1,36.0,0.0,10.5,2.61,Authenticated,0.101,90.0,key chain check failed
+A2,1.0,hardened,4,1,36.0,0.0,9.2,2.73,Authenticated,0.347,90.0,key chain check failed
+A3,10,naive,0,0,,0.934,676.6,660.34,Unchecked,0.0,,
+A3,10,naive,1,0,,0.934,678.1,659.33,Unchecked,0.0,,
+A3,10,naive,2,0,,0.934,674.9,659.21,Unchecked,0.0,,
+A3,10,naive,3,0,,0.934,677.8,659.84,Unchecked,0.0,,
+A3,10,naive,4,0,,0.934,674.3,659.83,Unchecked,0.0,,
+A3,10,tesla,0,1,0.0,0.0,9.2,2.57,Authenticated,0.0,90.0,root key signature
+A3,10,tesla,1,1,0.0,0.0,7.8,2.91,Authenticated,0.0,90.0,root key signature
+A3,10,tesla,2,1,0.0,0.0,10.7,2.75,Authenticated,0.0,90.0,root key signature
+A3,10,tesla,3,1,0.0,0.0,10.5,2.58,Authenticated,0.0,90.0,root key signature
+A3,10,tesla,4,1,0.0,0.0,9.2,2.98,Authenticated,0.0,90.0,root key signature
+A3,10,hardened,0,1,0.0,0.0,9.2,2.57,Authenticated,0.009,90.0,root key signature
+A3,10,hardened,1,1,0.0,0.0,7.8,2.91,Authenticated,0.004,90.0,root key signature
+A3,10,hardened,2,1,0.0,0.0,10.7,2.75,Authenticated,0.268,90.0,root key signature
+A3,10,hardened,3,1,0.0,0.0,10.5,2.58,Authenticated,0.101,90.0,root key signature
+A3,10,hardened,4,1,0.0,0.0,9.2,2.98,Authenticated,0.347,90.0,root key signature
+A4,0,naive,0,0,,0.915,1210.6,1130.55,Unchecked,0.0,,
+A4,0,naive,1,0,,0.915,1213.5,1131.04,Unchecked,0.0,,
+A4,0,naive,2,0,,0.915,1210.7,1131.22,Unchecked,0.0,,
+A4,0,naive,3,0,,0.915,1210.3,1130.49,Unchecked,0.0,,
+A4,0,naive,4,0,,0.915,1211.8,1130.46,Unchecked,0.0,,
+A4,0,tesla,0,1,31.0,0.0,6.8,2.42,Untrusted,0.0,90.0,late tag rejected
+A4,0,tesla,1,1,31.0,0.0,5.9,2.16,Untrusted,0.0,90.0,late tag rejected
+A4,0,tesla,2,1,31.0,0.0,5.9,2.09,Untrusted,0.0,90.0,late tag rejected
+A4,0,tesla,3,1,31.0,0.0,5.9,2.68,Untrusted,0.0,90.0,late tag rejected
+A4,0,tesla,4,1,31.0,0.0,6.4,1.86,Untrusted,0.0,90.0,late tag rejected
+A4,0,hardened,0,1,31.0,0.0,6.8,2.42,Untrusted,0.009,90.0,late tag rejected
+A4,0,hardened,1,1,31.0,0.0,5.9,2.16,Untrusted,0.004,90.0,late tag rejected
+A4,0,hardened,2,1,31.0,0.0,5.9,2.09,Untrusted,0.268,90.0,late tag rejected
+A4,0,hardened,3,1,31.0,0.0,5.9,2.68,Untrusted,0.101,90.0,late tag rejected
+A4,0,hardened,4,1,31.0,0.0,6.4,1.86,Untrusted,0.347,90.0,late tag rejected
+A4,0.5,naive,0,0,,0.915,1210.6,1130.55,Unchecked,0.5,,
+A4,0.5,naive,1,0,,0.915,1213.5,1131.04,Unchecked,0.5,,
+A4,0.5,naive,2,0,,0.915,1210.7,1131.22,Unchecked,0.5,,
+A4,0.5,naive,3,0,,0.915,1210.3,1130.49,Unchecked,0.5,,
+A4,0.5,naive,4,0,,0.915,1211.8,1130.46,Unchecked,0.5,,
+A4,0.5,tesla,0,1,31.0,0.0,6.8,2.42,Untrusted,0.5,90.0,late tag rejected
+A4,0.5,tesla,1,1,31.0,0.0,5.9,2.16,Untrusted,0.5,90.0,late tag rejected
+A4,0.5,tesla,2,1,31.0,0.0,5.9,2.09,Untrusted,0.5,90.0,late tag rejected
+A4,0.5,tesla,3,1,31.0,0.0,5.9,2.68,Untrusted,0.5,90.0,late tag rejected
+A4,0.5,tesla,4,1,31.0,0.0,6.4,1.86,Untrusted,0.5,90.0,late tag rejected
+A4,0.5,hardened,0,1,31.0,0.0,6.8,2.42,Untrusted,0.009,90.0,late tag rejected
+A4,0.5,hardened,1,1,31.0,0.0,5.9,2.16,Untrusted,0.004,90.0,late tag rejected
+A4,0.5,hardened,2,1,31.0,0.0,5.9,2.09,Untrusted,0.268,90.0,late tag rejected
+A4,0.5,hardened,3,1,31.0,0.0,5.9,2.68,Untrusted,0.101,90.0,late tag rejected
+A4,0.5,hardened,4,1,31.0,0.0,6.4,1.86,Untrusted,0.347,90.0,late tag rejected
+A4,1,naive,0,0,,0.915,1210.6,1130.55,Unchecked,1.0,,
+A4,1,naive,1,0,,0.915,1213.5,1131.04,Unchecked,1.0,,
+A4,1,naive,2,0,,0.915,1210.7,1131.22,Unchecked,1.0,,
+A4,1,naive,3,0,,0.915,1210.3,1130.49,Unchecked,1.0,,
+A4,1,naive,4,0,,0.915,1211.8,1130.46,Unchecked,1.0,,
+A4,1,tesla,0,1,31.0,0.0,6.8,2.42,Untrusted,1.0,90.0,late tag rejected
+A4,1,tesla,1,1,31.0,0.0,5.9,2.16,Untrusted,1.0,90.0,late tag rejected
+A4,1,tesla,2,1,31.0,0.0,5.9,2.09,Untrusted,1.0,90.0,late tag rejected
+A4,1,tesla,3,1,31.0,0.0,5.9,2.68,Untrusted,1.0,90.0,late tag rejected
+A4,1,tesla,4,1,31.0,0.0,6.4,1.86,Untrusted,1.0,90.0,late tag rejected
+A4,1,hardened,0,1,31.0,0.0,6.8,2.42,Untrusted,0.009,90.0,late tag rejected
+A4,1,hardened,1,1,31.0,0.0,5.9,2.16,Untrusted,0.004,90.0,late tag rejected
+A4,1,hardened,2,1,31.0,0.0,5.9,2.09,Untrusted,0.268,90.0,late tag rejected
+A4,1,hardened,3,1,31.0,0.0,5.9,2.68,Untrusted,0.101,90.0,late tag rejected
+A4,1,hardened,4,1,31.0,0.0,6.4,1.86,Untrusted,0.347,90.0,late tag rejected
+A4,2,naive,0,0,,0.915,1210.6,1130.55,Unchecked,2.0,,
+A4,2,naive,1,0,,0.915,1213.5,1131.04,Unchecked,2.0,,
+A4,2,naive,2,0,,0.915,1210.7,1131.22,Unchecked,2.0,,
+A4,2,naive,3,0,,0.915,1210.3,1130.49,Unchecked,2.0,,
+A4,2,naive,4,0,,0.915,1211.8,1130.46,Unchecked,2.0,,
+A4,2,tesla,0,1,31.0,0.0,6.8,2.42,Untrusted,2.0,90.0,late tag rejected
+A4,2,tesla,1,1,31.0,0.0,5.9,2.16,Untrusted,2.0,90.0,late tag rejected
+A4,2,tesla,2,1,31.0,0.0,5.9,2.09,Untrusted,2.0,90.0,late tag rejected
+A4,2,tesla,3,1,31.0,0.0,5.9,2.68,Untrusted,2.0,90.0,late tag rejected
+A4,2,tesla,4,1,31.0,0.0,6.4,1.86,Untrusted,2.0,90.0,late tag rejected
+A4,2,hardened,0,1,31.0,0.0,6.8,2.42,Untrusted,0.009,90.0,late tag rejected
+A4,2,hardened,1,1,31.0,0.0,5.9,2.16,Untrusted,0.004,90.0,late tag rejected
+A4,2,hardened,2,1,31.0,0.0,5.9,2.09,Untrusted,0.268,90.0,late tag rejected
+A4,2,hardened,3,1,31.0,0.0,5.9,2.68,Untrusted,0.101,90.0,late tag rejected
+A4,2,hardened,4,1,31.0,0.0,6.4,1.86,Untrusted,0.347,90.0,late tag rejected
+A4,5,naive,0,0,,0.915,1210.6,1130.55,Unchecked,5.0,,
+A4,5,naive,1,0,,0.915,1213.5,1131.04,Unchecked,5.0,,
+A4,5,naive,2,0,,0.915,1210.7,1131.22,Unchecked,5.0,,
+A4,5,naive,3,0,,0.915,1210.3,1130.49,Unchecked,5.0,,
+A4,5,naive,4,0,,0.915,1211.8,1130.46,Unchecked,5.0,,
+A4,5,tesla,0,0,,0.915,1210.6,1130.55,Authenticated,5.0,90.0,
+A4,5,tesla,1,0,,0.915,1213.5,1131.04,Authenticated,5.0,90.0,
+A4,5,tesla,2,0,,0.915,1210.7,1131.22,Authenticated,5.0,90.0,
+A4,5,tesla,3,0,,0.915,1210.3,1130.49,Authenticated,5.0,90.0,
+A4,5,tesla,4,0,,0.915,1211.8,1130.46,Authenticated,5.0,90.0,
+A4,5,hardened,0,1,31.0,0.0,6.8,2.42,Untrusted,0.009,90.0,late tag rejected
+A4,5,hardened,1,1,31.0,0.0,5.9,2.16,Untrusted,0.004,90.0,late tag rejected
+A4,5,hardened,2,1,31.0,0.0,5.9,2.09,Untrusted,0.268,90.0,late tag rejected
+A4,5,hardened,3,1,31.0,0.0,5.9,2.68,Untrusted,0.101,90.0,late tag rejected
+A4,5,hardened,4,1,31.0,0.0,6.4,1.86,Untrusted,0.347,90.0,late tag rejected
+A4,10,naive,0,0,,0.915,1210.6,1130.55,Unchecked,10.0,,
+A4,10,naive,1,0,,0.915,1213.5,1131.04,Unchecked,10.0,,
+A4,10,naive,2,0,,0.915,1210.7,1131.22,Unchecked,10.0,,
+A4,10,naive,3,0,,0.915,1210.3,1130.49,Unchecked,10.0,,
+A4,10,naive,4,0,,0.915,1211.8,1130.46,Unchecked,10.0,,
+A4,10,tesla,0,0,,0.915,1210.6,1130.55,Authenticated,10.0,90.0,
+A4,10,tesla,1,0,,0.915,1213.5,1131.04,Authenticated,10.0,90.0,
+A4,10,tesla,2,0,,0.915,1210.7,1131.22,Authenticated,10.0,90.0,
+A4,10,tesla,3,0,,0.915,1210.3,1130.49,Authenticated,10.0,90.0,
+A4,10,tesla,4,0,,0.915,1211.8,1130.46,Authenticated,10.0,90.0,
+A4,10,hardened,0,1,31.0,0.0,6.8,2.42,Untrusted,0.009,90.0,late tag rejected
+A4,10,hardened,1,1,31.0,0.0,5.9,2.16,Untrusted,0.004,90.0,late tag rejected
+A4,10,hardened,2,1,31.0,0.0,5.9,2.09,Untrusted,0.268,90.0,late tag rejected
+A4,10,hardened,3,1,31.0,0.0,5.9,2.68,Untrusted,0.101,90.0,late tag rejected
+A4,10,hardened,4,1,31.0,0.0,6.4,1.86,Untrusted,0.347,90.0,late tag rejected
+A4,30,naive,0,0,,0.915,1210.6,1130.55,Unchecked,30.0,,
+A4,30,naive,1,0,,0.915,1213.5,1131.04,Unchecked,30.0,,
+A4,30,naive,2,0,,0.915,1210.7,1131.22,Unchecked,30.0,,
+A4,30,naive,3,0,,0.915,1210.3,1130.49,Unchecked,30.0,,
+A4,30,naive,4,0,,0.915,1211.8,1130.46,Unchecked,30.0,,
+A4,30,tesla,0,0,,0.915,1210.6,1130.55,Authenticated,30.0,90.0,
+A4,30,tesla,1,0,,0.915,1213.5,1131.04,Authenticated,30.0,90.0,
+A4,30,tesla,2,0,,0.915,1210.7,1131.22,Authenticated,30.0,90.0,
+A4,30,tesla,3,0,,0.915,1210.3,1130.49,Authenticated,30.0,90.0,
+A4,30,tesla,4,0,,0.915,1211.8,1130.46,Authenticated,30.0,90.0,
+A4,30,hardened,0,1,31.0,0.0,6.8,2.42,Untrusted,0.009,90.0,late tag rejected
+A4,30,hardened,1,1,31.0,0.0,5.9,2.16,Untrusted,0.004,90.0,late tag rejected
+A4,30,hardened,2,1,31.0,0.0,5.9,2.09,Untrusted,0.268,90.0,late tag rejected
+A4,30,hardened,3,1,31.0,0.0,5.9,2.68,Untrusted,0.101,90.0,late tag rejected
+A4,30,hardened,4,1,31.0,0.0,6.4,1.86,Untrusted,0.347,90.0,late tag rejected
+A4,60,naive,0,0,,0.915,1210.6,1130.55,Unchecked,60.0,,
+A4,60,naive,1,0,,0.915,1213.5,1131.04,Unchecked,60.0,,
+A4,60,naive,2,0,,0.915,1210.7,1131.22,Unchecked,60.0,,
+A4,60,naive,3,0,,0.915,1210.3,1130.49,Unchecked,60.0,,
+A4,60,naive,4,0,,0.915,1211.8,1130.46,Unchecked,60.0,,
+A4,60,tesla,0,0,,0.915,1210.6,1130.55,Authenticated,60.0,90.0,
+A4,60,tesla,1,0,,0.915,1213.5,1131.04,Authenticated,60.0,90.0,
+A4,60,tesla,2,0,,0.915,1210.7,1131.22,Authenticated,60.0,90.0,
+A4,60,tesla,3,0,,0.915,1210.3,1130.49,Authenticated,60.0,90.0,
+A4,60,tesla,4,0,,0.915,1211.8,1130.46,Authenticated,60.0,90.0,
+A4,60,hardened,0,1,31.0,0.0,6.8,2.42,Untrusted,0.009,90.0,late tag rejected
+A4,60,hardened,1,1,31.0,0.0,5.9,2.16,Untrusted,0.004,90.0,late tag rejected
+A4,60,hardened,2,1,31.0,0.0,5.9,2.09,Untrusted,0.268,90.0,late tag rejected
+A4,60,hardened,3,1,31.0,0.0,5.9,2.68,Untrusted,0.101,90.0,late tag rejected
+A4,60,hardened,4,1,31.0,0.0,6.4,1.86,Untrusted,0.347,90.0,late tag rejected
+A5,0.25,naive,0,0,,0.845,1174.4,1128.2,Unchecked,0.25,,
+A5,0.25,naive,1,0,,0.845,1172.5,1128.16,Unchecked,0.25,,
+A5,0.25,naive,2,0,,0.845,1173.6,1128.01,Unchecked,0.25,,
+A5,0.25,naive,3,0,,0.845,1174.0,1128.86,Unchecked,0.25,,
+A5,0.25,naive,4,0,,0.845,1173.7,1128.77,Unchecked,0.25,,
+A5,0.25,tesla,0,1,61.0,0.0,6.8,2.36,Untrusted,0.25,90.0,late tag rejected
+A5,0.25,tesla,1,1,61.0,0.0,5.9,2.15,Untrusted,0.25,90.0,late tag rejected
+A5,0.25,tesla,2,1,61.0,0.0,5.9,2.03,Untrusted,0.25,90.0,late tag rejected
+A5,0.25,tesla,3,1,61.0,0.0,5.9,2.57,Untrusted,0.25,90.0,late tag rejected
+A5,0.25,tesla,4,1,61.0,0.0,6.4,1.86,Untrusted,0.25,90.0,late tag rejected
+A5,0.25,hardened,0,1,61.0,0.0,6.8,2.36,Untrusted,0.191,90.0,late tag rejected
+A5,0.25,hardened,1,1,61.0,0.0,5.9,2.15,Untrusted,0.204,90.0,late tag rejected
+A5,0.25,hardened,2,1,61.0,0.0,5.9,2.03,Untrusted,0.268,90.0,late tag rejected
+A5,0.25,hardened,3,1,61.0,0.0,5.9,2.57,Untrusted,0.101,90.0,late tag rejected
+A5,0.25,hardened,4,1,61.0,0.0,6.4,1.86,Untrusted,0.547,90.0,late tag rejected
+A5,0.5,naive,0,0,,0.845,1174.4,1128.2,Unchecked,0.5,,
+A5,0.5,naive,1,0,,0.845,1172.5,1128.16,Unchecked,0.5,,
+A5,0.5,naive,2,0,,0.845,1173.6,1128.01,Unchecked,0.5,,
+A5,0.5,naive,3,0,,0.845,1174.0,1128.86,Unchecked,0.5,,
+A5,0.5,naive,4,0,,0.845,1173.7,1128.77,Unchecked,0.5,,
+A5,0.5,tesla,0,1,61.0,0.0,6.8,2.36,Untrusted,0.5,90.0,late tag rejected
+A5,0.5,tesla,1,1,61.0,0.0,5.9,2.15,Untrusted,0.5,90.0,late tag rejected
+A5,0.5,tesla,2,1,61.0,0.0,5.9,2.03,Untrusted,0.5,90.0,late tag rejected
+A5,0.5,tesla,3,1,61.0,0.0,5.9,2.57,Untrusted,0.5,90.0,late tag rejected
+A5,0.5,tesla,4,1,61.0,0.0,6.4,1.86,Untrusted,0.5,90.0,late tag rejected
+A5,0.5,hardened,0,1,61.0,0.0,6.8,2.36,Untrusted,0.391,90.0,late tag rejected
+A5,0.5,hardened,1,1,61.0,0.0,5.9,2.15,Untrusted,0.404,90.0,late tag rejected
+A5,0.5,hardened,2,1,61.0,0.0,5.9,2.03,Untrusted,0.268,90.0,late tag rejected
+A5,0.5,hardened,3,1,61.0,0.0,5.9,2.57,Untrusted,0.299,90.0,late tag rejected
+A5,0.5,hardened,4,1,61.0,0.0,6.4,1.86,Untrusted,0.747,90.0,late tag rejected
+A5,1,naive,0,0,,0.845,1174.4,1128.2,Unchecked,1.0,,
+A5,1,naive,1,0,,0.845,1172.5,1128.16,Unchecked,1.0,,
+A5,1,naive,2,0,,0.845,1173.6,1128.01,Unchecked,1.0,,
+A5,1,naive,3,0,,0.845,1174.0,1128.86,Unchecked,1.0,,
+A5,1,naive,4,0,,0.845,1173.7,1128.77,Unchecked,1.0,,
+A5,1,tesla,0,1,61.0,0.0,6.8,2.36,Untrusted,1.0,90.0,late tag rejected
+A5,1,tesla,1,1,61.0,0.0,5.9,2.15,Untrusted,1.0,90.0,late tag rejected
+A5,1,tesla,2,1,61.0,0.0,5.9,2.03,Untrusted,1.0,90.0,late tag rejected
+A5,1,tesla,3,1,61.0,0.0,5.9,2.57,Untrusted,1.0,90.0,late tag rejected
+A5,1,tesla,4,1,61.0,0.0,6.4,1.86,Untrusted,1.0,90.0,late tag rejected
+A5,1,hardened,0,1,61.0,0.0,6.8,2.36,Untrusted,0.791,90.0,late tag rejected
+A5,1,hardened,1,1,61.0,0.0,5.9,2.15,Untrusted,0.804,90.0,late tag rejected
+A5,1,hardened,2,1,61.0,0.0,5.9,2.03,Untrusted,0.532,90.0,late tag rejected
+A5,1,hardened,3,1,61.0,0.0,5.9,2.57,Untrusted,0.699,90.0,late tag rejected
+A5,1,hardened,4,1,24.0,0.0,2.7,1.86,Untrusted,0.947,90.0,late tag rejected;replay suspected
+A5,2,naive,0,0,,0.845,1174.4,1128.2,Unchecked,2.0,,
+A5,2,naive,1,0,,0.845,1172.5,1128.16,Unchecked,2.0,,
+A5,2,naive,2,0,,0.845,1173.6,1128.01,Unchecked,2.0,,
+A5,2,naive,3,0,,0.845,1174.0,1128.86,Unchecked,2.0,,
+A5,2,naive,4,0,,0.845,1173.7,1128.77,Unchecked,2.0,,
+A5,2,tesla,0,1,61.0,0.0,6.8,2.36,Untrusted,2.0,90.0,late tag rejected
+A5,2,tesla,1,1,61.0,0.0,5.9,2.15,Untrusted,2.0,90.0,late tag rejected
+A5,2,tesla,2,1,61.0,0.0,5.9,2.03,Untrusted,2.0,90.0,late tag rejected
+A5,2,tesla,3,1,61.0,0.0,5.9,2.57,Untrusted,2.0,90.0,late tag rejected
+A5,2,tesla,4,1,61.0,0.0,6.4,1.86,Untrusted,2.0,90.0,late tag rejected
+A5,2,hardened,0,1,18.0,0.0,2.5,2.09,Untrusted,0.791,90.0,clock disagrees with signed time;late tag rejected;replay suspected
+A5,2,hardened,1,1,18.0,0.0,5.9,5.05,Untrusted,0.804,90.0,clock disagrees with signed time;late tag rejected;replay suspected
+A5,2,hardened,2,1,24.0,0.0,3.2,1.8,Untrusted,0.932,90.0,clock disagrees with signed time;late tag rejected;replay suspected
+A5,2,hardened,3,1,18.0,0.0,4.2,2.69,Untrusted,0.699,90.0,clock disagrees with signed time;late tag rejected;replay suspected
+A5,2,hardened,4,1,12.0,0.0,2.7,2.34,Untrusted,0.747,90.0,clock disagrees with signed time;late tag rejected;replay suspected
+A5,5,naive,0,0,,0.845,1174.4,1128.2,Unchecked,5.0,,
+A5,5,naive,1,0,,0.845,1172.5,1128.16,Unchecked,5.0,,
+A5,5,naive,2,0,,0.845,1173.6,1128.01,Unchecked,5.0,,
+A5,5,naive,3,0,,0.845,1174.0,1128.86,Unchecked,5.0,,
+A5,5,naive,4,0,,0.845,1173.7,1128.77,Unchecked,5.0,,
+A5,5,tesla,0,0,,0.845,1174.4,1128.2,Authenticated,5.0,90.0,
+A5,5,tesla,1,0,,0.845,1172.5,1128.16,Authenticated,5.0,90.0,
+A5,5,tesla,2,0,,0.845,1173.6,1128.01,Authenticated,5.0,90.0,
+A5,5,tesla,3,0,,0.845,1174.0,1128.86,Authenticated,5.0,90.0,
+A5,5,tesla,4,0,,0.845,1173.7,1128.77,Authenticated,5.0,90.0,
+A5,5,hardened,0,1,6.0,0.0,2.1,2.09,Untrusted,0.009,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,5,hardened,1,1,6.0,0.0,5.1,5.05,Untrusted,0.004,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,5,hardened,2,1,6.0,0.0,2.5,2.46,Untrusted,0.268,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,5,hardened,3,1,6.0,0.0,2.4,2.42,Untrusted,0.101,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,5,hardened,4,1,6.0,0.0,2.0,1.95,Untrusted,0.347,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,10,naive,0,0,,0.845,1174.4,1128.2,Unchecked,10.0,,
+A5,10,naive,1,0,,0.845,1172.5,1128.16,Unchecked,10.0,,
+A5,10,naive,2,0,,0.845,1173.6,1128.01,Unchecked,10.0,,
+A5,10,naive,3,0,,0.845,1174.0,1128.86,Unchecked,10.0,,
+A5,10,naive,4,0,,0.845,1173.7,1128.77,Unchecked,10.0,,
+A5,10,tesla,0,0,,0.845,1174.4,1128.2,Authenticated,10.0,90.0,
+A5,10,tesla,1,0,,0.845,1172.5,1128.16,Authenticated,10.0,90.0,
+A5,10,tesla,2,0,,0.845,1173.6,1128.01,Authenticated,10.0,90.0,
+A5,10,tesla,3,0,,0.845,1174.0,1128.86,Authenticated,10.0,90.0,
+A5,10,tesla,4,0,,0.845,1173.7,1128.77,Authenticated,10.0,90.0,
+A5,10,hardened,0,1,6.0,0.0,2.1,2.09,Untrusted,0.009,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,10,hardened,1,1,6.0,0.0,5.1,5.05,Untrusted,0.004,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,10,hardened,2,1,6.0,0.0,2.5,2.46,Untrusted,0.268,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,10,hardened,3,1,6.0,0.0,2.4,2.42,Untrusted,0.101,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,10,hardened,4,1,6.0,0.0,2.0,1.95,Untrusted,0.347,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,30,naive,0,0,,0.845,1174.4,1128.2,Unchecked,30.0,,
+A5,30,naive,1,0,,0.845,1172.5,1128.16,Unchecked,30.0,,
+A5,30,naive,2,0,,0.845,1173.6,1128.01,Unchecked,30.0,,
+A5,30,naive,3,0,,0.845,1174.0,1128.86,Unchecked,30.0,,
+A5,30,naive,4,0,,0.845,1173.7,1128.77,Unchecked,30.0,,
+A5,30,tesla,0,0,,0.845,1174.4,1128.2,Authenticated,30.0,90.0,
+A5,30,tesla,1,0,,0.845,1172.5,1128.16,Authenticated,30.0,90.0,
+A5,30,tesla,2,0,,0.845,1173.6,1128.01,Authenticated,30.0,90.0,
+A5,30,tesla,3,0,,0.845,1174.0,1128.86,Authenticated,30.0,90.0,
+A5,30,tesla,4,0,,0.845,1173.7,1128.77,Authenticated,30.0,90.0,
+A5,30,hardened,0,1,6.0,0.0,2.1,2.09,Untrusted,0.009,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,30,hardened,1,1,6.0,0.0,5.1,5.05,Untrusted,0.004,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,30,hardened,2,1,6.0,0.0,2.5,2.46,Untrusted,0.268,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,30,hardened,3,1,6.0,0.0,2.4,2.42,Untrusted,0.101,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,30,hardened,4,1,6.0,0.0,2.0,1.95,Untrusted,0.347,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,100,naive,0,0,,0.845,1174.4,1128.2,Unchecked,100.0,,
+A5,100,naive,1,0,,0.845,1172.5,1128.16,Unchecked,100.0,,
+A5,100,naive,2,0,,0.845,1173.6,1128.01,Unchecked,100.0,,
+A5,100,naive,3,0,,0.845,1174.0,1128.86,Unchecked,100.0,,
+A5,100,naive,4,0,,0.845,1173.7,1128.77,Unchecked,100.0,,
+A5,100,tesla,0,0,,0.845,1174.4,1128.2,Authenticated,100.0,90.0,
+A5,100,tesla,1,0,,0.845,1172.5,1128.16,Authenticated,100.0,90.0,
+A5,100,tesla,2,0,,0.845,1173.6,1128.01,Authenticated,100.0,90.0,
+A5,100,tesla,3,0,,0.845,1174.0,1128.86,Authenticated,100.0,90.0,
+A5,100,tesla,4,0,,0.845,1173.7,1128.77,Authenticated,100.0,90.0,
+A5,100,hardened,0,1,6.0,0.0,2.1,2.09,Untrusted,0.009,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,100,hardened,1,1,6.0,0.0,5.1,5.05,Untrusted,0.004,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,100,hardened,2,1,6.0,0.0,2.5,2.46,Untrusted,0.268,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,100,hardened,3,1,6.0,0.0,2.4,2.42,Untrusted,0.101,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A5,100,hardened,4,1,6.0,0.0,2.0,1.95,Untrusted,0.347,90.0,clock disagrees with signed time;clock jump;late tag rejected
+A6,0.1,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,0.1,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,0.1,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,0.1,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.1,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,0.1,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,0.1,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,0.1,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,0.1,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,0.1,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,0.1,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.1,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,0.1,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,0.1,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,0.1,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,0.1,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,0.1,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,0.1,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,0.1,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,0.1,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,0.1,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,0.1,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,0.1,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,0.1,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.1,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,0.1,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,0.1,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,0.1,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,0.1,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,0.1,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,0.1,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,0.1,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,0.1,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,0.1,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,0.1,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,0.1,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,0.1,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,0.1,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,0.1,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.1,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,0.1,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,0.1,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,0.1,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,0.1,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.1,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,0.1,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,0.1,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,0.1,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,0.1,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,0.1,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,0.1,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.1,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,0.1,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,0.1,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,0.1,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,0.1,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,0.1,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,0.1,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,0.1,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,0.1,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,0.1,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,0.1,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,0.1,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,0.1,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.1,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,0.1,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,0.1,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,0.1,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,0.1,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,0.1,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,0.1,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,0.1,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,0.1,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,0.1,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,0.1,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,0.1,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,0.1,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,0.1,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,0.1,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.1,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,0.1,hardened,0,0,,1.0,12905.5,12903.26,Authenticated,0.009,90.0,
+A6,0.1,hardened,1,0,,1.0,12905.0,12903.45,Authenticated,0.004,90.0,
+A6,0.1,hardened,2,0,,1.0,12905.8,12903.65,Authenticated,0.268,90.0,
+A6,0.1,hardened,3,0,,1.0,12905.6,12903.37,Authenticated,0.101,90.0,
+A6,0.1,hardened,4,0,,1.0,12905.4,12903.77,Authenticated,0.347,90.0,
+A6,0.1,hardened,5,0,,1.0,12906.0,12903.64,Authenticated,0.192,90.0,
+A6,0.1,hardened,6,0,,1.0,12905.6,12903.45,Authenticated,0.4,90.0,
+A6,0.1,hardened,7,0,,1.0,12905.2,12903.47,Authenticated,0.029,90.0,
+A6,0.1,hardened,8,0,,1.0,12905.4,12903.51,Authenticated,0.332,90.0,
+A6,0.1,hardened,9,0,,1.0,12905.0,12903.59,Authenticated,0.395,90.0,
+A6,0.1,hardened,10,0,,1.0,12905.6,12903.54,Authenticated,0.251,90.0,
+A6,0.1,hardened,11,0,,1.0,12905.6,12903.6,Authenticated,0.006,90.0,
+A6,0.1,hardened,12,0,,1.0,12904.9,12903.52,Authenticated,0.391,90.0,
+A6,0.1,hardened,13,0,,1.0,12905.4,12903.59,Authenticated,0.251,90.0,
+A6,0.1,hardened,14,0,,1.0,12905.6,12903.74,Authenticated,0.183,90.0,
+A6,0.1,hardened,15,0,,1.0,12905.5,12903.39,Authenticated,0.389,90.0,
+A6,0.1,hardened,16,0,,1.0,12905.4,12903.37,Authenticated,0.072,90.0,
+A6,0.1,hardened,17,0,,1.0,12906.0,12903.76,Authenticated,0.213,90.0,
+A6,0.1,hardened,18,0,,1.0,12905.9,12903.56,Authenticated,0.008,90.0,
+A6,0.1,hardened,19,0,,1.0,12905.7,12903.41,Authenticated,0.085,90.0,
+A6,0.1,hardened,20,0,,1.0,12905.4,12903.47,Authenticated,0.192,90.0,
+A6,0.1,hardened,21,0,,1.0,12905.7,12903.58,Authenticated,0.227,90.0,
+A6,0.1,hardened,22,0,,1.0,12905.4,12903.54,Authenticated,0.253,90.0,
+A6,0.1,hardened,23,0,,1.0,12905.6,12903.54,Authenticated,0.074,90.0,
+A6,0.1,hardened,24,0,,1.0,12906.2,12903.57,Authenticated,0.245,90.0,
+A6,0.1,hardened,25,0,,1.0,12904.8,12903.41,Authenticated,0.297,90.0,
+A6,0.1,hardened,26,0,,1.0,12905.2,12903.37,Authenticated,0.355,90.0,
+A6,0.1,hardened,27,0,,1.0,12905.4,12903.41,Authenticated,0.348,90.0,
+A6,0.1,hardened,28,0,,1.0,12905.8,12903.59,Authenticated,0.294,90.0,
+A6,0.1,hardened,29,0,,1.0,12905.1,12903.35,Authenticated,0.008,90.0,
+A6,0.1,hardened,30,0,,1.0,12905.5,12903.31,Authenticated,0.232,90.0,
+A6,0.1,hardened,31,0,,1.0,12905.4,12903.49,Authenticated,0.289,90.0,
+A6,0.1,hardened,32,0,,1.0,12905.6,12903.24,Authenticated,0.003,90.0,
+A6,0.1,hardened,33,0,,1.0,12905.8,12903.39,Authenticated,0.121,90.0,
+A6,0.1,hardened,34,0,,1.0,12905.6,12903.43,Authenticated,0.306,90.0,
+A6,0.1,hardened,35,0,,1.0,12905.5,12903.8,Authenticated,0.171,90.0,
+A6,0.1,hardened,36,0,,1.0,12906.2,12903.44,Authenticated,0.232,90.0,
+A6,0.1,hardened,37,0,,1.0,12905.2,12903.55,Authenticated,0.268,90.0,
+A6,0.1,hardened,38,0,,1.0,12905.6,12903.37,Authenticated,0.158,90.0,
+A6,0.1,hardened,39,0,,1.0,12906.7,12903.69,Authenticated,0.05,90.0,
+A6,0.2,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,0.2,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,0.2,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,0.2,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.2,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,0.2,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,0.2,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,0.2,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,0.2,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,0.2,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,0.2,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.2,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,0.2,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,0.2,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,0.2,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,0.2,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,0.2,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,0.2,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,0.2,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,0.2,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,0.2,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,0.2,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,0.2,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,0.2,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.2,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,0.2,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,0.2,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,0.2,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,0.2,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,0.2,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,0.2,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,0.2,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,0.2,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,0.2,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,0.2,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,0.2,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,0.2,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,0.2,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,0.2,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.2,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,0.2,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,0.2,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,0.2,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,0.2,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.2,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,0.2,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,0.2,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,0.2,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,0.2,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,0.2,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,0.2,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.2,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,0.2,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,0.2,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,0.2,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,0.2,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,0.2,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,0.2,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,0.2,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,0.2,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,0.2,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,0.2,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,0.2,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,0.2,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.2,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,0.2,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,0.2,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,0.2,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,0.2,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,0.2,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,0.2,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,0.2,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,0.2,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,0.2,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,0.2,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,0.2,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,0.2,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,0.2,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,0.2,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.2,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,0.2,hardened,0,0,,1.0,12905.5,12903.26,Authenticated,0.009,90.0,
+A6,0.2,hardened,1,0,,1.0,12905.0,12903.45,Authenticated,0.004,90.0,
+A6,0.2,hardened,2,0,,1.0,12905.8,12903.65,Authenticated,0.268,90.0,
+A6,0.2,hardened,3,0,,1.0,12905.6,12903.37,Authenticated,0.101,90.0,
+A6,0.2,hardened,4,0,,1.0,12905.4,12903.77,Authenticated,0.347,90.0,
+A6,0.2,hardened,5,0,,1.0,12906.0,12903.64,Authenticated,0.192,90.0,
+A6,0.2,hardened,6,0,,1.0,12905.6,12903.45,Authenticated,0.4,90.0,
+A6,0.2,hardened,7,0,,1.0,12905.2,12903.47,Authenticated,0.029,90.0,
+A6,0.2,hardened,8,0,,1.0,12905.4,12903.51,Authenticated,0.332,90.0,
+A6,0.2,hardened,9,0,,1.0,12905.0,12903.59,Authenticated,0.395,90.0,
+A6,0.2,hardened,10,0,,1.0,12905.6,12903.54,Authenticated,0.251,90.0,
+A6,0.2,hardened,11,0,,1.0,12905.6,12903.6,Authenticated,0.006,90.0,
+A6,0.2,hardened,12,0,,1.0,12904.9,12903.52,Authenticated,0.391,90.0,
+A6,0.2,hardened,13,0,,1.0,12905.4,12903.59,Authenticated,0.251,90.0,
+A6,0.2,hardened,14,0,,1.0,12905.6,12903.74,Authenticated,0.183,90.0,
+A6,0.2,hardened,15,0,,1.0,12905.5,12903.39,Authenticated,0.389,90.0,
+A6,0.2,hardened,16,0,,1.0,12905.4,12903.37,Authenticated,0.072,90.0,
+A6,0.2,hardened,17,0,,1.0,12906.0,12903.76,Authenticated,0.213,90.0,
+A6,0.2,hardened,18,0,,1.0,12905.9,12903.56,Authenticated,0.008,90.0,
+A6,0.2,hardened,19,0,,1.0,12905.7,12903.41,Authenticated,0.085,90.0,
+A6,0.2,hardened,20,0,,1.0,12905.4,12903.47,Authenticated,0.192,90.0,
+A6,0.2,hardened,21,0,,1.0,12905.7,12903.58,Authenticated,0.227,90.0,
+A6,0.2,hardened,22,0,,1.0,12905.4,12903.54,Authenticated,0.253,90.0,
+A6,0.2,hardened,23,0,,1.0,12905.6,12903.54,Authenticated,0.074,90.0,
+A6,0.2,hardened,24,0,,1.0,12906.2,12903.57,Authenticated,0.245,90.0,
+A6,0.2,hardened,25,0,,1.0,12904.8,12903.41,Authenticated,0.297,90.0,
+A6,0.2,hardened,26,0,,1.0,12905.2,12903.37,Authenticated,0.355,90.0,
+A6,0.2,hardened,27,0,,1.0,12905.4,12903.41,Authenticated,0.348,90.0,
+A6,0.2,hardened,28,0,,1.0,12905.8,12903.59,Authenticated,0.294,90.0,
+A6,0.2,hardened,29,0,,1.0,12905.1,12903.35,Authenticated,0.008,90.0,
+A6,0.2,hardened,30,0,,1.0,12905.5,12903.31,Authenticated,0.232,90.0,
+A6,0.2,hardened,31,0,,1.0,12905.4,12903.49,Authenticated,0.289,90.0,
+A6,0.2,hardened,32,0,,1.0,12905.6,12903.24,Authenticated,0.003,90.0,
+A6,0.2,hardened,33,0,,1.0,12905.8,12903.39,Authenticated,0.121,90.0,
+A6,0.2,hardened,34,0,,1.0,12905.6,12903.43,Authenticated,0.306,90.0,
+A6,0.2,hardened,35,0,,1.0,12905.5,12903.8,Authenticated,0.171,90.0,
+A6,0.2,hardened,36,0,,1.0,12906.2,12903.44,Authenticated,0.232,90.0,
+A6,0.2,hardened,37,0,,1.0,12905.2,12903.55,Authenticated,0.268,90.0,
+A6,0.2,hardened,38,0,,1.0,12905.6,12903.37,Authenticated,0.158,90.0,
+A6,0.2,hardened,39,0,,1.0,12906.7,12903.69,Authenticated,0.05,90.0,
+A6,0.3,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,0.3,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,0.3,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,0.3,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.3,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,0.3,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,0.3,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,0.3,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,0.3,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,0.3,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,0.3,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.3,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,0.3,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,0.3,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,0.3,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,0.3,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,0.3,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,0.3,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,0.3,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,0.3,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,0.3,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,0.3,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,0.3,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,0.3,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.3,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,0.3,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,0.3,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,0.3,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,0.3,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,0.3,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,0.3,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,0.3,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,0.3,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,0.3,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,0.3,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,0.3,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,0.3,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,0.3,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,0.3,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.3,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,0.3,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,0.3,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,0.3,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,0.3,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.3,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,0.3,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,0.3,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,0.3,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,0.3,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,0.3,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,0.3,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.3,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,0.3,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,0.3,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,0.3,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,0.3,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,0.3,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,0.3,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,0.3,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,0.3,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,0.3,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,0.3,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,0.3,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,0.3,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.3,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,0.3,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,0.3,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,0.3,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,0.3,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,0.3,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,0.3,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,0.3,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,0.3,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,0.3,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,0.3,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,0.3,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,0.3,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,0.3,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,0.3,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.3,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,0.3,hardened,0,0,,1.0,12905.5,12903.26,Authenticated,0.009,90.0,
+A6,0.3,hardened,1,0,,1.0,12905.0,12903.45,Authenticated,0.004,90.0,
+A6,0.3,hardened,2,0,,1.0,12905.8,12903.65,Authenticated,0.268,90.0,
+A6,0.3,hardened,3,0,,1.0,12905.6,12903.37,Authenticated,0.101,90.0,
+A6,0.3,hardened,4,0,,1.0,12905.4,12903.77,Authenticated,0.347,90.0,
+A6,0.3,hardened,5,0,,1.0,12906.0,12903.64,Authenticated,0.192,90.0,
+A6,0.3,hardened,6,0,,1.0,12905.6,12903.45,Authenticated,0.4,90.0,
+A6,0.3,hardened,7,0,,1.0,12905.2,12903.47,Authenticated,0.029,90.0,
+A6,0.3,hardened,8,0,,1.0,12905.4,12903.51,Authenticated,0.332,90.0,
+A6,0.3,hardened,9,0,,1.0,12905.0,12903.59,Authenticated,0.395,90.0,
+A6,0.3,hardened,10,0,,1.0,12905.6,12903.54,Authenticated,0.251,90.0,
+A6,0.3,hardened,11,0,,1.0,12905.6,12903.6,Authenticated,0.006,90.0,
+A6,0.3,hardened,12,0,,1.0,12904.9,12903.52,Authenticated,0.391,90.0,
+A6,0.3,hardened,13,0,,1.0,12905.4,12903.59,Authenticated,0.251,90.0,
+A6,0.3,hardened,14,0,,1.0,12905.6,12903.74,Authenticated,0.183,90.0,
+A6,0.3,hardened,15,0,,1.0,12905.5,12903.39,Authenticated,0.389,90.0,
+A6,0.3,hardened,16,0,,1.0,12905.4,12903.37,Authenticated,0.072,90.0,
+A6,0.3,hardened,17,0,,1.0,12906.0,12903.76,Authenticated,0.213,90.0,
+A6,0.3,hardened,18,0,,1.0,12905.9,12903.56,Authenticated,0.008,90.0,
+A6,0.3,hardened,19,0,,1.0,12905.7,12903.41,Authenticated,0.085,90.0,
+A6,0.3,hardened,20,0,,1.0,12905.4,12903.47,Authenticated,0.192,90.0,
+A6,0.3,hardened,21,0,,1.0,12905.7,12903.58,Authenticated,0.227,90.0,
+A6,0.3,hardened,22,0,,1.0,12905.4,12903.54,Authenticated,0.253,90.0,
+A6,0.3,hardened,23,0,,1.0,12905.6,12903.54,Authenticated,0.074,90.0,
+A6,0.3,hardened,24,0,,1.0,12906.2,12903.57,Authenticated,0.245,90.0,
+A6,0.3,hardened,25,0,,1.0,12904.8,12903.41,Authenticated,0.297,90.0,
+A6,0.3,hardened,26,0,,1.0,12905.2,12903.37,Authenticated,0.355,90.0,
+A6,0.3,hardened,27,0,,1.0,12905.4,12903.41,Authenticated,0.348,90.0,
+A6,0.3,hardened,28,0,,1.0,12905.8,12903.59,Authenticated,0.294,90.0,
+A6,0.3,hardened,29,0,,1.0,12905.1,12903.35,Authenticated,0.008,90.0,
+A6,0.3,hardened,30,0,,1.0,12905.5,12903.31,Authenticated,0.232,90.0,
+A6,0.3,hardened,31,0,,1.0,12905.4,12903.49,Authenticated,0.289,90.0,
+A6,0.3,hardened,32,0,,1.0,12905.6,12903.24,Authenticated,0.003,90.0,
+A6,0.3,hardened,33,0,,1.0,12905.8,12903.39,Authenticated,0.122,90.0,
+A6,0.3,hardened,34,0,,1.0,12905.6,12903.43,Authenticated,0.306,90.0,
+A6,0.3,hardened,35,0,,1.0,12905.5,12903.8,Authenticated,0.171,90.0,
+A6,0.3,hardened,36,0,,1.0,12906.2,12903.44,Authenticated,0.232,90.0,
+A6,0.3,hardened,37,0,,1.0,12905.2,12903.55,Authenticated,0.268,90.0,
+A6,0.3,hardened,38,0,,1.0,12905.6,12903.37,Authenticated,0.158,90.0,
+A6,0.3,hardened,39,0,,1.0,12906.7,12903.69,Authenticated,0.05,90.0,
+A6,0.5,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,0.5,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,0.5,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,0.5,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.5,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,0.5,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,0.5,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,0.5,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,0.5,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,0.5,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,0.5,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.5,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,0.5,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,0.5,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,0.5,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,0.5,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,0.5,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,0.5,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,0.5,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,0.5,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,0.5,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,0.5,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,0.5,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,0.5,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.5,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,0.5,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,0.5,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,0.5,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,0.5,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,0.5,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,0.5,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,0.5,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,0.5,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,0.5,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,0.5,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,0.5,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,0.5,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,0.5,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,0.5,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.5,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,0.5,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,0.5,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,0.5,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,0.5,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.5,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,0.5,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,0.5,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,0.5,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,0.5,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,0.5,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,0.5,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.5,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,0.5,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,0.5,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,0.5,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,0.5,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,0.5,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,0.5,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,0.5,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,0.5,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,0.5,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,0.5,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,0.5,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,0.5,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.5,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,0.5,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,0.5,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,0.5,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,0.5,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,0.5,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,0.5,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,0.5,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,0.5,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,0.5,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,0.5,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,0.5,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,0.5,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,0.5,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,0.5,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.5,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,0.5,hardened,0,0,,1.0,12905.5,12903.26,Authenticated,0.009,90.0,
+A6,0.5,hardened,1,0,,1.0,12905.0,12903.45,Authenticated,0.004,90.0,
+A6,0.5,hardened,2,0,,1.0,12905.8,12903.65,Authenticated,0.268,90.0,
+A6,0.5,hardened,3,0,,1.0,12905.6,12903.37,Authenticated,0.101,90.0,
+A6,0.5,hardened,4,0,,1.0,12905.4,12903.77,Authenticated,0.347,90.0,
+A6,0.5,hardened,5,0,,1.0,12906.0,12903.64,Authenticated,0.192,90.0,
+A6,0.5,hardened,6,0,,1.0,12905.6,12903.45,Authenticated,0.4,90.0,
+A6,0.5,hardened,7,0,,1.0,12905.2,12903.47,Authenticated,0.029,90.0,
+A6,0.5,hardened,8,0,,1.0,12905.4,12903.51,Authenticated,0.332,90.0,
+A6,0.5,hardened,9,0,,1.0,12905.0,12903.59,Authenticated,0.395,90.0,
+A6,0.5,hardened,10,0,,1.0,12905.6,12903.54,Authenticated,0.251,90.0,
+A6,0.5,hardened,11,0,,1.0,12905.6,12903.6,Authenticated,0.006,90.0,
+A6,0.5,hardened,12,0,,1.0,12904.9,12903.52,Authenticated,0.391,90.0,
+A6,0.5,hardened,13,0,,1.0,12905.4,12903.59,Authenticated,0.251,90.0,
+A6,0.5,hardened,14,0,,1.0,12905.6,12903.74,Authenticated,0.183,90.0,
+A6,0.5,hardened,15,0,,1.0,12905.5,12903.39,Authenticated,0.389,90.0,
+A6,0.5,hardened,16,0,,1.0,12905.4,12903.37,Authenticated,0.072,90.0,
+A6,0.5,hardened,17,0,,1.0,12906.0,12903.76,Authenticated,0.213,90.0,
+A6,0.5,hardened,18,0,,1.0,12905.9,12903.56,Authenticated,0.008,90.0,
+A6,0.5,hardened,19,0,,1.0,12905.7,12903.41,Authenticated,0.085,90.0,
+A6,0.5,hardened,20,0,,1.0,12905.4,12903.47,Authenticated,0.192,90.0,
+A6,0.5,hardened,21,0,,1.0,12905.7,12903.58,Authenticated,0.227,90.0,
+A6,0.5,hardened,22,0,,1.0,12905.4,12903.54,Authenticated,0.253,90.0,
+A6,0.5,hardened,23,0,,1.0,12905.6,12903.54,Authenticated,0.074,90.0,
+A6,0.5,hardened,24,0,,1.0,12906.2,12903.57,Authenticated,0.245,90.0,
+A6,0.5,hardened,25,0,,1.0,12904.8,12903.41,Authenticated,0.297,90.0,
+A6,0.5,hardened,26,0,,1.0,12905.2,12903.37,Authenticated,0.355,90.0,
+A6,0.5,hardened,27,0,,1.0,12905.4,12903.41,Authenticated,0.348,90.0,
+A6,0.5,hardened,28,0,,1.0,12905.8,12903.59,Authenticated,0.294,90.0,
+A6,0.5,hardened,29,0,,1.0,12905.1,12903.35,Authenticated,0.008,90.0,
+A6,0.5,hardened,30,0,,1.0,12905.5,12903.31,Authenticated,0.232,90.0,
+A6,0.5,hardened,31,0,,1.0,12905.4,12903.49,Authenticated,0.289,90.0,
+A6,0.5,hardened,32,0,,1.0,12905.6,12903.24,Authenticated,0.003,90.0,
+A6,0.5,hardened,33,0,,1.0,12905.8,12903.39,Authenticated,0.121,90.0,
+A6,0.5,hardened,34,0,,1.0,12905.6,12903.43,Authenticated,0.306,90.0,
+A6,0.5,hardened,35,0,,1.0,12905.5,12903.8,Authenticated,0.171,90.0,
+A6,0.5,hardened,36,0,,1.0,12906.2,12903.44,Authenticated,0.232,90.0,
+A6,0.5,hardened,37,0,,1.0,12905.2,12903.55,Authenticated,0.268,90.0,
+A6,0.5,hardened,38,0,,1.0,12905.6,12903.37,Authenticated,0.158,90.0,
+A6,0.5,hardened,39,0,,1.0,12906.7,12903.69,Authenticated,0.05,90.0,
+A6,0.7,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,0.7,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,0.7,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,0.7,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.7,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,0.7,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,0.7,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,0.7,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,0.7,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,0.7,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,0.7,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.7,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,0.7,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,0.7,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,0.7,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,0.7,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,0.7,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,0.7,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,0.7,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,0.7,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,0.7,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,0.7,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,0.7,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,0.7,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,0.7,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,0.7,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,0.7,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,0.7,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,0.7,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,0.7,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,0.7,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,0.7,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,0.7,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,0.7,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,0.7,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,0.7,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,0.7,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,0.7,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,0.7,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,0.7,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,0.7,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,0.7,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,0.7,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,0.7,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.7,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,0.7,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,0.7,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,0.7,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,0.7,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,0.7,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,0.7,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.7,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,0.7,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,0.7,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,0.7,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,0.7,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,0.7,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,0.7,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,0.7,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,0.7,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,0.7,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,0.7,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,0.7,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,0.7,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,0.7,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,0.7,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,0.7,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,0.7,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,0.7,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,0.7,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,0.7,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,0.7,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,0.7,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,0.7,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,0.7,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,0.7,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,0.7,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,0.7,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,0.7,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,0.7,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,0.7,hardened,0,0,,1.0,12905.5,12903.26,Authenticated,0.009,90.0,
+A6,0.7,hardened,1,0,,1.0,12905.0,12903.45,Authenticated,0.004,90.0,
+A6,0.7,hardened,2,0,,1.0,12905.8,12903.65,Authenticated,0.268,90.0,
+A6,0.7,hardened,3,0,,1.0,12905.6,12903.37,Authenticated,0.101,90.0,
+A6,0.7,hardened,4,0,,1.0,12905.4,12903.77,Authenticated,0.347,90.0,
+A6,0.7,hardened,5,0,,1.0,12906.0,12903.64,Authenticated,0.192,90.0,
+A6,0.7,hardened,6,0,,1.0,12905.6,12903.45,Authenticated,0.4,90.0,
+A6,0.7,hardened,7,0,,1.0,12905.2,12903.47,Authenticated,0.029,90.0,
+A6,0.7,hardened,8,0,,1.0,12905.4,12903.51,Authenticated,0.332,90.0,
+A6,0.7,hardened,9,0,,1.0,12905.0,12903.59,Authenticated,0.395,90.0,
+A6,0.7,hardened,10,0,,1.0,12905.6,12903.54,Authenticated,0.251,90.0,
+A6,0.7,hardened,11,0,,1.0,12905.6,12903.6,Authenticated,0.006,90.0,
+A6,0.7,hardened,12,0,,1.0,12904.9,12903.52,Authenticated,0.391,90.0,
+A6,0.7,hardened,13,0,,1.0,12905.4,12903.59,Authenticated,0.251,90.0,
+A6,0.7,hardened,14,0,,1.0,12905.6,12903.74,Authenticated,0.183,90.0,
+A6,0.7,hardened,15,1,0.7,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,0.7,hardened,16,0,,1.0,12905.4,12903.37,Authenticated,0.072,90.0,
+A6,0.7,hardened,17,0,,1.0,12906.0,12903.76,Authenticated,0.213,90.0,
+A6,0.7,hardened,18,0,,1.0,12905.9,12903.56,Authenticated,0.008,90.0,
+A6,0.7,hardened,19,0,,1.0,12905.7,12903.41,Authenticated,0.085,90.0,
+A6,0.7,hardened,20,0,,1.0,12905.4,12903.47,Authenticated,0.192,90.0,
+A6,0.7,hardened,21,0,,1.0,12905.7,12903.58,Authenticated,0.227,90.0,
+A6,0.7,hardened,22,0,,1.0,12905.4,12903.54,Authenticated,0.253,90.0,
+A6,0.7,hardened,23,0,,1.0,12905.6,12903.54,Authenticated,0.074,90.0,
+A6,0.7,hardened,24,0,,1.0,12906.2,12903.57,Authenticated,0.245,90.0,
+A6,0.7,hardened,25,0,,1.0,12904.8,12903.41,Authenticated,0.297,90.0,
+A6,0.7,hardened,26,0,,1.0,12905.2,12903.37,Authenticated,0.355,90.0,
+A6,0.7,hardened,27,0,,1.0,12905.4,12903.41,Authenticated,0.348,90.0,
+A6,0.7,hardened,28,0,,1.0,12905.8,12903.59,Authenticated,0.294,90.0,
+A6,0.7,hardened,29,0,,1.0,12905.1,12903.35,Authenticated,0.008,90.0,
+A6,0.7,hardened,30,0,,1.0,12905.5,12903.31,Authenticated,0.232,90.0,
+A6,0.7,hardened,31,0,,1.0,12905.4,12903.49,Authenticated,0.289,90.0,
+A6,0.7,hardened,32,0,,1.0,12905.6,12903.24,Authenticated,0.003,90.0,
+A6,0.7,hardened,33,0,,1.0,12905.8,12903.39,Authenticated,0.121,90.0,
+A6,0.7,hardened,34,1,0.7,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,0.7,hardened,35,0,,1.0,12905.5,12903.8,Authenticated,0.171,90.0,
+A6,0.7,hardened,36,0,,1.0,12906.2,12903.44,Authenticated,0.232,90.0,
+A6,0.7,hardened,37,0,,1.0,12905.2,12903.55,Authenticated,0.268,90.0,
+A6,0.7,hardened,38,0,,1.0,12905.6,12903.37,Authenticated,0.158,90.0,
+A6,0.7,hardened,39,0,,1.0,12906.7,12903.69,Authenticated,0.05,90.0,
+A6,1.0,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,1.0,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,1.0,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,1.0,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,1.0,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,1.0,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,1.0,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,1.0,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,1.0,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,1.0,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,1.0,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,1.0,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,1.0,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,1.0,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,1.0,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,1.0,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,1.0,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,1.0,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,1.0,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,1.0,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,1.0,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,1.0,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,1.0,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,1.0,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,1.0,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,1.0,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,1.0,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,1.0,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,1.0,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,1.0,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,1.0,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,1.0,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,1.0,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,1.0,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,1.0,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,1.0,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,1.0,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,1.0,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,1.0,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,1.0,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,1.0,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,1.0,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,1.0,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,1.0,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,1.0,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,1.0,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,1.0,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,1.0,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,1.0,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,1.0,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,1.0,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,1.0,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,1.0,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,1.0,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,1.0,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,1.0,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,1.0,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,1.0,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,1.0,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,1.0,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,1.0,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,1.0,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,1.0,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,1.0,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,1.0,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,1.0,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,1.0,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,1.0,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,1.0,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,1.0,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,1.0,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,1.0,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,1.0,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,1.0,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,1.0,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,1.0,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,1.0,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,1.0,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,1.0,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,1.0,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,1.0,hardened,0,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,1,0,,1.0,12905.0,12903.45,Authenticated,0.004,90.0,
+A6,1.0,hardened,2,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,3,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,4,0,,1.0,12905.4,12903.77,Authenticated,0.347,90.0,
+A6,1.0,hardened,5,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,6,0,,1.0,12905.6,12903.45,Authenticated,0.4,90.0,
+A6,1.0,hardened,7,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,8,0,,1.0,12905.4,12903.51,Authenticated,0.332,90.0,
+A6,1.0,hardened,9,0,,1.0,12905.0,12903.59,Authenticated,0.395,90.0,
+A6,1.0,hardened,10,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,11,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,12,0,,1.0,12904.9,12903.52,Authenticated,0.391,90.0,
+A6,1.0,hardened,13,0,,1.0,12905.4,12903.59,Authenticated,0.251,90.0,
+A6,1.0,hardened,14,0,,1.0,12905.6,12903.74,Authenticated,0.183,90.0,
+A6,1.0,hardened,15,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,16,0,,1.0,12905.4,12903.37,Authenticated,0.072,90.0,
+A6,1.0,hardened,17,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,18,0,,1.0,12905.9,12903.56,Authenticated,0.008,90.0,
+A6,1.0,hardened,19,0,,1.0,12905.7,12903.41,Authenticated,0.085,90.0,
+A6,1.0,hardened,20,0,,1.0,12905.4,12903.47,Authenticated,0.192,90.0,
+A6,1.0,hardened,21,0,,1.0,12905.7,12903.58,Authenticated,0.227,90.0,
+A6,1.0,hardened,22,0,,1.0,12905.4,12903.54,Authenticated,0.253,90.0,
+A6,1.0,hardened,23,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,24,0,,1.0,12906.2,12903.57,Authenticated,0.245,90.0,
+A6,1.0,hardened,25,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,26,0,,1.0,12905.2,12903.37,Authenticated,0.355,90.0,
+A6,1.0,hardened,27,0,,1.0,12905.4,12903.41,Authenticated,0.348,90.0,
+A6,1.0,hardened,28,0,,1.0,12905.8,12903.59,Authenticated,0.294,90.0,
+A6,1.0,hardened,29,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,30,0,,1.0,12905.5,12903.31,Authenticated,0.232,90.0,
+A6,1.0,hardened,31,0,,1.0,12905.4,12903.49,Authenticated,0.289,90.0,
+A6,1.0,hardened,32,0,,1.0,12905.6,12903.24,Authenticated,0.003,90.0,
+A6,1.0,hardened,33,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,34,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,35,0,,1.0,12905.5,12903.8,Authenticated,0.171,90.0,
+A6,1.0,hardened,36,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,37,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,38,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.0,hardened,39,1,1.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,1.5,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,1.5,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,1.5,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,1.5,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,1.5,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,1.5,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,1.5,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,1.5,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,1.5,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,1.5,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,1.5,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,1.5,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,1.5,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,1.5,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,1.5,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,1.5,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,1.5,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,1.5,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,1.5,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,1.5,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,1.5,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,1.5,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,1.5,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,1.5,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,1.5,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,1.5,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,1.5,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,1.5,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,1.5,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,1.5,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,1.5,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,1.5,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,1.5,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,1.5,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,1.5,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,1.5,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,1.5,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,1.5,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,1.5,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,1.5,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,1.5,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,1.5,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,1.5,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,1.5,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,1.5,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,1.5,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,1.5,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,1.5,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,1.5,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,1.5,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,1.5,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,1.5,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,1.5,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,1.5,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,1.5,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,1.5,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,1.5,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,1.5,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,1.5,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,1.5,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,1.5,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,1.5,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,1.5,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,1.5,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,1.5,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,1.5,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,1.5,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,1.5,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,1.5,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,1.5,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,1.5,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,1.5,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,1.5,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,1.5,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,1.5,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,1.5,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,1.5,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,1.5,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,1.5,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,1.5,hardened,0,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,1,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,2,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,3,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,4,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,5,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,6,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,7,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,8,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,9,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,10,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,11,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,12,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,13,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,14,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,15,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,16,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,17,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,18,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,19,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,20,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,21,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,22,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,23,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,24,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,25,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,26,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,27,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,28,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,29,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,30,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,31,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,32,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,33,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,34,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,35,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,36,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,37,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,38,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,1.5,hardened,39,1,1.5,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,2,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,2,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,2,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,2,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,2,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,2,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,2,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,2,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,2,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,2,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,2,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,2,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,2,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,2,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,2,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,2,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,2,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,2,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,2,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,2,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,2,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,2,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,2,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,2,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,2,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,2,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,2,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,2,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,2,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,2,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,2,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,2,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,2,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,2,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,2,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,2,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,2,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,2,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,2,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,2,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,2,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,2,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,2,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,2,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,2,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,2,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,2,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,2,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,2,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,2,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,2,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,2,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,2,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,2,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,2,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,2,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,2,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,2,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,2,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,2,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,2,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,2,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,2,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,2,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,2,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,2,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,2,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,2,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,2,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,2,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,2,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,2,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,2,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,2,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,2,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,2,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,2,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,2,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,2,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,2,hardened,0,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,1,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,2,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,3,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,4,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,5,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,6,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,7,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,8,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,9,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,10,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,11,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,12,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,13,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,14,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,15,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,16,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,17,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,18,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,19,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,20,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,21,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,22,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,23,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,24,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,25,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,26,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,27,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,28,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,29,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,30,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,31,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,32,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,33,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,34,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,35,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,36,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,37,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,38,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,2,hardened,39,1,2.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,5,naive,1,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,5,naive,2,0,,1.0,12905.8,12903.65,Unchecked,0.0,,
+A6,5,naive,3,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,5,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,5,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,5,naive,6,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,5,naive,7,0,,1.0,12905.2,12903.47,Unchecked,0.0,,
+A6,5,naive,8,0,,1.0,12905.4,12903.51,Unchecked,0.0,,
+A6,5,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,5,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,5,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,5,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,5,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,5,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,5,naive,15,0,,1.0,12905.5,12903.39,Unchecked,0.0,,
+A6,5,naive,16,0,,1.0,12905.4,12903.37,Unchecked,0.0,,
+A6,5,naive,17,0,,1.0,12906.0,12903.76,Unchecked,0.0,,
+A6,5,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,5,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,5,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,5,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,5,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,5,naive,23,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,5,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,5,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,5,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,5,naive,27,0,,1.0,12905.4,12903.41,Unchecked,0.0,,
+A6,5,naive,28,0,,1.0,12905.8,12903.59,Unchecked,0.0,,
+A6,5,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,5,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,5,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,5,naive,32,0,,1.0,12905.6,12903.24,Unchecked,0.0,,
+A6,5,naive,33,0,,1.0,12905.8,12903.39,Unchecked,0.0,,
+A6,5,naive,34,0,,1.0,12905.6,12903.43,Unchecked,0.0,,
+A6,5,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,5,naive,36,0,,1.0,12906.2,12903.44,Unchecked,0.0,,
+A6,5,naive,37,0,,1.0,12905.2,12903.55,Unchecked,0.0,,
+A6,5,naive,38,0,,1.0,12905.6,12903.37,Unchecked,0.0,,
+A6,5,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,5,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,5,tesla,1,0,,1.0,12905.0,12903.45,Authenticated,0.0,90.0,
+A6,5,tesla,2,0,,1.0,12905.8,12903.65,Authenticated,0.0,90.0,
+A6,5,tesla,3,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,5,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,5,tesla,5,0,,1.0,12906.0,12903.64,Authenticated,0.0,90.0,
+A6,5,tesla,6,0,,1.0,12905.6,12903.45,Authenticated,0.0,90.0,
+A6,5,tesla,7,0,,1.0,12905.2,12903.47,Authenticated,0.0,90.0,
+A6,5,tesla,8,0,,1.0,12905.4,12903.51,Authenticated,0.0,90.0,
+A6,5,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,5,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,5,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,5,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,5,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,5,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,5,tesla,15,0,,1.0,12905.5,12903.39,Authenticated,0.0,90.0,
+A6,5,tesla,16,0,,1.0,12905.4,12903.37,Authenticated,0.0,90.0,
+A6,5,tesla,17,0,,1.0,12906.0,12903.76,Authenticated,0.0,90.0,
+A6,5,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,5,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,5,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,5,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,5,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,5,tesla,23,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,5,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,5,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,5,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,5,tesla,27,0,,1.0,12905.4,12903.41,Authenticated,0.0,90.0,
+A6,5,tesla,28,0,,1.0,12905.8,12903.59,Authenticated,0.0,90.0,
+A6,5,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,5,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,5,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,5,tesla,32,0,,1.0,12905.6,12903.24,Authenticated,0.0,90.0,
+A6,5,tesla,33,0,,1.0,12905.8,12903.39,Authenticated,0.0,90.0,
+A6,5,tesla,34,0,,1.0,12905.6,12903.43,Authenticated,0.0,90.0,
+A6,5,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,5,tesla,36,0,,1.0,12906.2,12903.44,Authenticated,0.0,90.0,
+A6,5,tesla,37,0,,1.0,12905.2,12903.55,Authenticated,0.0,90.0,
+A6,5,tesla,38,0,,1.0,12905.6,12903.37,Authenticated,0.0,90.0,
+A6,5,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,5,hardened,0,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,1,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,2,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,3,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,4,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,5,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,6,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,7,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,8,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,9,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,10,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,11,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,12,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,13,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,14,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,15,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,16,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,17,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,18,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,19,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,20,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,21,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,22,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,23,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,24,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,25,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,26,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,27,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,28,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,29,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,30,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,31,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,32,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,33,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,34,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,35,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,36,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,37,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,38,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,5,hardened,39,1,5.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,naive,0,0,,1.0,12905.5,12903.26,Unchecked,0.0,,
+A6,10,naive,1,0,,1.0,12905.0,12903.41,Unchecked,0.0,,
+A6,10,naive,2,0,,1.0,12905.8,12903.62,Unchecked,0.0,,
+A6,10,naive,3,0,,1.0,12905.6,12903.44,Unchecked,0.0,,
+A6,10,naive,4,0,,1.0,12905.4,12903.77,Unchecked,0.0,,
+A6,10,naive,5,0,,1.0,12906.0,12903.59,Unchecked,0.0,,
+A6,10,naive,6,0,,1.0,12905.6,12903.49,Unchecked,0.0,,
+A6,10,naive,7,0,,1.0,12905.2,12903.45,Unchecked,0.0,,
+A6,10,naive,8,0,,1.0,12905.4,12903.57,Unchecked,0.0,,
+A6,10,naive,9,0,,1.0,12905.0,12903.59,Unchecked,0.0,,
+A6,10,naive,10,0,,1.0,12905.6,12903.54,Unchecked,0.0,,
+A6,10,naive,11,0,,1.0,12905.6,12903.6,Unchecked,0.0,,
+A6,10,naive,12,0,,1.0,12904.9,12903.52,Unchecked,0.0,,
+A6,10,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,10,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,10,naive,15,0,,1.0,12905.5,12903.4,Unchecked,0.0,,
+A6,10,naive,16,0,,1.0,12905.4,12903.35,Unchecked,0.0,,
+A6,10,naive,17,0,,1.0,12906.0,12903.74,Unchecked,0.0,,
+A6,10,naive,18,0,,1.0,12905.9,12903.56,Unchecked,0.0,,
+A6,10,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,10,naive,20,0,,1.0,12905.4,12903.47,Unchecked,0.0,,
+A6,10,naive,21,0,,1.0,12905.7,12903.58,Unchecked,0.0,,
+A6,10,naive,22,0,,1.0,12905.4,12903.54,Unchecked,0.0,,
+A6,10,naive,23,0,,1.0,12905.6,12903.58,Unchecked,0.0,,
+A6,10,naive,24,0,,1.0,12906.2,12903.57,Unchecked,0.0,,
+A6,10,naive,25,0,,1.0,12904.8,12903.41,Unchecked,0.0,,
+A6,10,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,10,naive,27,0,,1.0,12905.4,12903.39,Unchecked,0.0,,
+A6,10,naive,28,0,,1.0,12905.8,12903.54,Unchecked,0.0,,
+A6,10,naive,29,0,,1.0,12905.1,12903.35,Unchecked,0.0,,
+A6,10,naive,30,0,,1.0,12905.5,12903.31,Unchecked,0.0,,
+A6,10,naive,31,0,,1.0,12905.4,12903.49,Unchecked,0.0,,
+A6,10,naive,32,0,,1.0,12905.6,12903.26,Unchecked,0.0,,
+A6,10,naive,33,0,,1.0,12905.8,12903.33,Unchecked,0.0,,
+A6,10,naive,34,0,,1.0,12905.6,12903.38,Unchecked,0.0,,
+A6,10,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,10,naive,36,0,,1.0,12906.2,12903.35,Unchecked,0.0,,
+A6,10,naive,37,0,,1.0,12905.2,12903.58,Unchecked,0.0,,
+A6,10,naive,38,0,,1.0,12905.6,12903.34,Unchecked,0.0,,
+A6,10,naive,39,0,,1.0,12906.7,12903.69,Unchecked,0.0,,
+A6,10,tesla,0,0,,1.0,12905.5,12903.26,Authenticated,0.0,90.0,
+A6,10,tesla,1,0,,1.0,12905.0,12903.41,Authenticated,0.0,90.0,
+A6,10,tesla,2,0,,1.0,12905.8,12903.62,Authenticated,0.0,90.0,
+A6,10,tesla,3,0,,1.0,12905.6,12903.44,Authenticated,0.0,90.0,
+A6,10,tesla,4,0,,1.0,12905.4,12903.77,Authenticated,0.0,90.0,
+A6,10,tesla,5,0,,1.0,12906.0,12903.59,Authenticated,0.0,90.0,
+A6,10,tesla,6,0,,1.0,12905.6,12903.49,Authenticated,0.0,90.0,
+A6,10,tesla,7,0,,1.0,12905.2,12903.45,Authenticated,0.0,90.0,
+A6,10,tesla,8,0,,1.0,12905.4,12903.57,Authenticated,0.0,90.0,
+A6,10,tesla,9,0,,1.0,12905.0,12903.59,Authenticated,0.0,90.0,
+A6,10,tesla,10,0,,1.0,12905.6,12903.54,Authenticated,0.0,90.0,
+A6,10,tesla,11,0,,1.0,12905.6,12903.6,Authenticated,0.0,90.0,
+A6,10,tesla,12,0,,1.0,12904.9,12903.52,Authenticated,0.0,90.0,
+A6,10,tesla,13,0,,1.0,12905.4,12903.59,Authenticated,0.0,90.0,
+A6,10,tesla,14,0,,1.0,12905.6,12903.74,Authenticated,0.0,90.0,
+A6,10,tesla,15,0,,1.0,12905.5,12903.4,Authenticated,0.0,90.0,
+A6,10,tesla,16,0,,1.0,12905.4,12903.35,Authenticated,0.0,90.0,
+A6,10,tesla,17,0,,1.0,12906.0,12903.74,Authenticated,0.0,90.0,
+A6,10,tesla,18,0,,1.0,12905.9,12903.56,Authenticated,0.0,90.0,
+A6,10,tesla,19,0,,1.0,12905.7,12903.41,Authenticated,0.0,90.0,
+A6,10,tesla,20,0,,1.0,12905.4,12903.47,Authenticated,0.0,90.0,
+A6,10,tesla,21,0,,1.0,12905.7,12903.58,Authenticated,0.0,90.0,
+A6,10,tesla,22,0,,1.0,12905.4,12903.54,Authenticated,0.0,90.0,
+A6,10,tesla,23,0,,1.0,12905.6,12903.58,Authenticated,0.0,90.0,
+A6,10,tesla,24,0,,1.0,12906.2,12903.57,Authenticated,0.0,90.0,
+A6,10,tesla,25,0,,1.0,12904.8,12903.41,Authenticated,0.0,90.0,
+A6,10,tesla,26,0,,1.0,12905.2,12903.37,Authenticated,0.0,90.0,
+A6,10,tesla,27,0,,1.0,12905.4,12903.39,Authenticated,0.0,90.0,
+A6,10,tesla,28,0,,1.0,12905.8,12903.54,Authenticated,0.0,90.0,
+A6,10,tesla,29,0,,1.0,12905.1,12903.35,Authenticated,0.0,90.0,
+A6,10,tesla,30,0,,1.0,12905.5,12903.31,Authenticated,0.0,90.0,
+A6,10,tesla,31,0,,1.0,12905.4,12903.49,Authenticated,0.0,90.0,
+A6,10,tesla,32,0,,1.0,12905.6,12903.26,Authenticated,0.0,90.0,
+A6,10,tesla,33,0,,1.0,12905.8,12903.33,Authenticated,0.0,90.0,
+A6,10,tesla,34,0,,1.0,12905.6,12903.38,Authenticated,0.0,90.0,
+A6,10,tesla,35,0,,1.0,12905.5,12903.8,Authenticated,0.0,90.0,
+A6,10,tesla,36,0,,1.0,12906.2,12903.35,Authenticated,0.0,90.0,
+A6,10,tesla,37,0,,1.0,12905.2,12903.58,Authenticated,0.0,90.0,
+A6,10,tesla,38,0,,1.0,12905.6,12903.34,Authenticated,0.0,90.0,
+A6,10,tesla,39,0,,1.0,12906.7,12903.69,Authenticated,0.0,90.0,
+A6,10,hardened,0,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,1,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,2,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,3,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,4,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,5,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,6,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,7,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,8,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,9,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,10,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,11,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,12,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,13,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,14,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,15,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,16,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,17,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,18,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,19,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,20,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,21,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,22,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,23,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,24,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,25,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,26,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,27,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,28,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,29,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,30,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,31,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,32,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,33,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,34,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,35,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,36,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,37,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,38,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,10,hardened,39,1,4.0,0.0,,,Untrusted,0.0,90.0,replay suspected
+A6,30,naive,0,0,,1.0,12905.5,12903.22,Unchecked,0.0,,
+A6,30,naive,1,0,,1.0,12905.0,12903.4,Unchecked,0.0,,
+A6,30,naive,2,0,,1.0,12905.8,12903.71,Unchecked,0.0,,
+A6,30,naive,3,0,,1.0,12905.6,12903.49,Unchecked,0.0,,
+A6,30,naive,4,0,,1.0,12905.4,12903.76,Unchecked,0.0,,
+A6,30,naive,5,0,,1.0,12906.0,12903.64,Unchecked,0.0,,
+A6,30,naive,6,0,,1.0,12905.6,12903.51,Unchecked,0.0,,
+A6,30,naive,7,0,,1.0,12905.2,12903.48,Unchecked,0.0,,
+A6,30,naive,8,0,,1.0,12905.4,12903.53,Unchecked,0.0,,
+A6,30,naive,9,0,,1.0,12905.0,12903.57,Unchecked,0.0,,
+A6,30,naive,10,0,,1.0,12905.6,12903.55,Unchecked,0.0,,
+A6,30,naive,11,0,,1.0,12905.6,12903.62,Unchecked,0.0,,
+A6,30,naive,12,0,,1.0,12905.0,12903.57,Unchecked,0.0,,
+A6,30,naive,13,0,,1.0,12905.4,12903.59,Unchecked,0.0,,
+A6,30,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,30,naive,15,0,,1.0,12905.7,12903.39,Unchecked,0.0,,
+A6,30,naive,16,0,,1.0,12905.5,12903.38,Unchecked,0.0,,
+A6,30,naive,17,0,,1.0,12906.0,12903.58,Unchecked,0.0,,
+A6,30,naive,18,0,,1.0,12905.9,12903.57,Unchecked,0.0,,
+A6,30,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,30,naive,20,0,,1.0,12905.4,12903.38,Unchecked,0.0,,
+A6,30,naive,21,0,,1.0,12905.7,12903.56,Unchecked,0.0,,
+A6,30,naive,22,0,,1.0,12905.4,12903.53,Unchecked,0.0,,
+A6,30,naive,23,0,,1.0,12906.1,12903.59,Unchecked,0.0,,
+A6,30,naive,24,0,,1.0,12906.2,12903.54,Unchecked,0.0,,
+A6,30,naive,25,0,,1.0,12904.8,12903.42,Unchecked,0.0,,
+A6,30,naive,26,0,,1.0,12905.2,12903.37,Unchecked,0.0,,
+A6,30,naive,27,0,,1.0,12905.4,12903.42,Unchecked,0.0,,
+A6,30,naive,28,0,,1.0,12905.6,12903.46,Unchecked,0.0,,
+A6,30,naive,29,0,,1.0,12905.1,12903.32,Unchecked,0.0,,
+A6,30,naive,30,0,,1.0,12905.5,12903.33,Unchecked,0.0,,
+A6,30,naive,31,0,,1.0,12905.4,12903.42,Unchecked,0.0,,
+A6,30,naive,32,0,,1.0,12905.6,12903.23,Unchecked,0.0,,
+A6,30,naive,33,0,,1.0,12905.8,12903.32,Unchecked,0.0,,
+A6,30,naive,34,0,,1.0,12905.6,12903.45,Unchecked,0.0,,
+A6,30,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,30,naive,36,0,,1.0,12906.2,12903.52,Unchecked,0.0,,
+A6,30,naive,37,0,,1.0,12905.2,12903.57,Unchecked,0.0,,
+A6,30,naive,38,0,,1.0,12905.6,12903.36,Unchecked,0.0,,
+A6,30,naive,39,0,,1.0,12906.7,12903.76,Unchecked,0.0,,
+A6,30,tesla,0,1,0.0,0.366,12905.5,12903.5,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,1,1,0.0,0.366,12904.5,12903.08,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,2,1,0.0,0.366,12905.4,12903.81,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,3,1,0.0,0.366,12905.6,12903.85,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,4,1,0.0,0.366,12905.2,12903.41,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,5,1,0.0,0.366,12905.5,12903.96,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,6,1,0.0,0.366,12905.6,12903.53,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,7,1,0.0,0.366,12905.2,12903.42,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,8,1,0.0,0.366,12905.4,12903.58,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,9,1,0.0,0.366,12904.7,12903.35,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,10,1,0.0,0.366,12905.5,12903.48,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,11,1,0.0,0.366,12905.6,12903.74,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,12,1,0.0,0.366,12905.0,12903.35,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,13,1,0.0,0.366,12905.4,12903.58,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,14,1,0.0,0.366,12905.0,12903.79,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,15,1,0.0,0.366,12905.7,12903.83,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,16,1,0.0,0.366,12905.5,12903.37,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,17,1,0.0,0.366,12905.4,12903.45,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,18,1,0.0,0.366,12905.9,12903.71,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,19,1,0.0,0.366,12905.1,12903.4,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,20,1,0.0,0.366,12905.0,12903.6,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,21,1,0.0,0.366,12905.0,12903.61,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,22,1,0.0,0.366,12904.7,12903.51,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,23,1,0.0,0.366,12906.1,12903.44,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,24,1,0.0,0.366,12905.0,12903.48,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,25,1,0.0,0.366,12904.8,12903.28,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,26,1,0.0,0.366,12904.8,12903.28,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,27,1,0.0,0.366,12905.4,12903.49,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,28,1,0.0,0.366,12905.1,12903.34,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,29,1,0.0,0.366,12905.1,12903.32,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,30,1,0.0,0.366,12905.4,12903.45,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,31,1,0.0,0.366,12905.0,12903.39,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,32,1,0.0,0.366,12905.0,12903.33,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,33,1,0.0,0.366,12905.8,12903.3,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,34,1,0.0,0.366,12905.4,12903.5,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,35,1,0.0,0.366,12904.8,12903.51,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,36,1,0.0,0.366,12906.2,12903.92,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,37,1,0.0,0.366,12905.2,12903.61,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,38,1,0.0,0.366,12904.7,12903.3,Degraded,0.0,90.0,late tag rejected
+A6,30,tesla,39,1,0.0,0.366,12906.7,12904.0,Degraded,0.0,90.0,late tag rejected
+A6,30,hardened,0,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,1,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,2,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,3,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,4,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,5,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,6,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,7,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,8,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,9,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,10,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,11,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,12,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,13,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,14,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,15,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,16,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,17,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,18,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,19,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,20,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,21,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,22,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,23,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,24,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,25,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,26,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,27,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,28,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,29,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,30,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,31,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,32,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,33,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,34,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,35,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,36,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,37,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,38,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,30,hardened,39,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,naive,0,0,,1.0,12905.5,12903.19,Unchecked,0.0,,
+A6,60,naive,1,0,,1.0,12905.7,12903.42,Unchecked,0.0,,
+A6,60,naive,2,0,,1.0,12905.8,12903.63,Unchecked,0.0,,
+A6,60,naive,3,0,,1.0,12905.6,12903.51,Unchecked,0.0,,
+A6,60,naive,4,0,,1.0,12905.4,12903.76,Unchecked,0.0,,
+A6,60,naive,5,0,,1.0,12905.5,12903.64,Unchecked,0.0,,
+A6,60,naive,6,0,,1.0,12905.6,12903.51,Unchecked,0.0,,
+A6,60,naive,7,0,,1.0,12905.2,12903.45,Unchecked,0.0,,
+A6,60,naive,8,0,,1.0,12905.4,12903.53,Unchecked,0.0,,
+A6,60,naive,9,0,,1.0,12905.0,12903.51,Unchecked,0.0,,
+A6,60,naive,10,0,,1.0,12905.6,12903.52,Unchecked,0.0,,
+A6,60,naive,11,0,,1.0,12905.6,12903.64,Unchecked,0.0,,
+A6,60,naive,12,0,,1.0,12905.0,12903.56,Unchecked,0.0,,
+A6,60,naive,13,0,,1.0,12905.7,12903.59,Unchecked,0.0,,
+A6,60,naive,14,0,,1.0,12905.6,12903.74,Unchecked,0.0,,
+A6,60,naive,15,0,,1.0,12905.7,12903.35,Unchecked,0.0,,
+A6,60,naive,16,0,,1.0,12905.5,12903.37,Unchecked,0.0,,
+A6,60,naive,17,0,,1.0,12906.0,12903.52,Unchecked,0.0,,
+A6,60,naive,18,0,,1.0,12905.9,12903.59,Unchecked,0.0,,
+A6,60,naive,19,0,,1.0,12905.7,12903.41,Unchecked,0.0,,
+A6,60,naive,20,0,,1.0,12905.4,12903.55,Unchecked,0.0,,
+A6,60,naive,21,0,,1.0,12905.7,12903.63,Unchecked,0.0,,
+A6,60,naive,22,0,,1.0,12905.6,12903.53,Unchecked,0.0,,
+A6,60,naive,23,0,,1.0,12906.1,12903.59,Unchecked,0.0,,
+A6,60,naive,24,0,,1.0,12906.2,12903.45,Unchecked,0.0,,
+A6,60,naive,25,0,,1.0,12904.8,12903.4,Unchecked,0.0,,
+A6,60,naive,26,0,,1.0,12905.2,12903.28,Unchecked,0.0,,
+A6,60,naive,27,0,,1.0,12906.6,12903.55,Unchecked,0.0,,
+A6,60,naive,28,0,,1.0,12905.6,12903.41,Unchecked,0.0,,
+A6,60,naive,29,0,,1.0,12905.1,12903.32,Unchecked,0.0,,
+A6,60,naive,30,0,,1.0,12905.5,12903.33,Unchecked,0.0,,
+A6,60,naive,31,0,,1.0,12905.4,12903.55,Unchecked,0.0,,
+A6,60,naive,32,0,,1.0,12905.6,12903.26,Unchecked,0.0,,
+A6,60,naive,33,0,,1.0,12905.8,12903.45,Unchecked,0.0,,
+A6,60,naive,34,0,,1.0,12905.6,12903.41,Unchecked,0.0,,
+A6,60,naive,35,0,,1.0,12905.5,12903.8,Unchecked,0.0,,
+A6,60,naive,36,0,,1.0,12906.2,12903.53,Unchecked,0.0,,
+A6,60,naive,37,0,,1.0,12905.2,12903.58,Unchecked,0.0,,
+A6,60,naive,38,0,,1.0,12905.0,12903.45,Unchecked,0.0,,
+A6,60,naive,39,0,,1.0,12906.7,12903.8,Unchecked,0.0,,
+A6,60,tesla,0,1,0.0,0.437,12905.5,12903.58,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,1,1,0.0,0.437,12905.7,12903.2,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,2,1,0.0,0.437,12905.4,12903.66,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,3,1,0.0,0.437,12905.6,12903.85,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,4,1,0.0,0.437,12905.2,12903.48,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,5,1,0.0,0.437,12905.5,12903.92,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,6,1,0.0,0.437,12905.6,12903.64,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,7,1,0.0,0.437,12905.2,12903.48,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,8,1,0.0,0.437,12905.4,12903.57,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,9,1,0.0,0.437,12904.7,12903.27,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,10,1,0.0,0.437,12905.5,12903.44,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,11,1,0.0,0.437,12905.6,12903.86,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,12,1,0.0,0.437,12905.0,12903.15,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,13,1,0.0,0.437,12905.7,12903.56,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,14,1,0.0,0.437,12905.0,12903.79,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,15,1,0.0,0.437,12905.7,12903.75,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,16,1,0.0,0.437,12905.5,12903.34,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,17,1,0.0,0.437,12905.4,12903.46,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,18,1,0.0,0.437,12905.9,12903.77,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,19,1,0.0,0.437,12905.1,12903.41,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,20,1,0.0,0.437,12905.0,12903.66,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,21,1,0.0,0.437,12905.2,12903.63,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,22,1,0.0,0.437,12905.6,12903.49,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,23,1,0.0,0.437,12906.1,12903.44,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,24,1,0.0,0.437,12905.0,12903.42,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,25,1,0.0,0.437,12904.8,12903.16,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,26,1,0.0,0.437,12904.8,12903.28,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,27,1,0.0,0.437,12906.6,12903.55,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,28,1,0.0,0.437,12905.1,12903.26,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,29,1,0.0,0.437,12905.1,12903.32,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,30,1,0.0,0.437,12905.4,12903.36,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,31,1,0.0,0.437,12905.3,12903.55,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,32,1,0.0,0.437,12905.1,12903.45,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,33,1,0.0,0.437,12905.8,12903.32,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,34,1,0.0,0.437,12905.4,12903.47,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,35,1,0.0,0.437,12904.8,12903.51,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,36,1,0.0,0.437,12906.2,12903.92,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,37,1,0.0,0.437,12905.2,12903.69,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,38,1,0.0,0.437,12904.7,12903.39,Degraded,0.0,90.0,late tag rejected
+A6,60,tesla,39,1,0.0,0.437,12906.7,12904.0,Degraded,0.0,90.0,late tag rejected
+A6,60,hardened,0,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,1,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,2,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,3,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,4,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,5,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,6,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,7,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,8,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,9,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,10,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,11,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,12,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,13,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,14,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,15,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,16,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,17,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,18,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,19,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,20,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,21,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,22,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,23,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,24,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,25,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,26,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,27,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,28,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,29,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,30,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,31,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,32,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,33,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,34,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,35,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,36,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,37,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,38,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A6,60,hardened,39,1,0.0,0.0,,,Untrusted,0.0,90.0,late tag rejected;replay suspected
+A7,0.25,naive,0,0,,1.0,19046.7,18081.7,Unchecked,0.0,,
+A7,0.25,naive,1,0,,1.0,12045.1,11806.64,Unchecked,0.0,,
+A7,0.25,naive,2,0,,1.0,11293.7,11115.01,Unchecked,0.0,,
+A7,0.25,naive,3,0,,1.0,12609.7,12318.51,Unchecked,0.0,,
+A7,0.25,naive,4,0,,1.0,12977.5,12523.0,Unchecked,0.0,,
+A7,0.25,tesla,0,0,,0.0,20.2,3.66,Authenticated,0.0,90.0,
+A7,0.25,tesla,1,0,,0.0,10.8,3.48,Authenticated,0.0,90.0,
+A7,0.25,tesla,2,0,,0.0,8.7,2.9,Authenticated,0.0,90.0,
+A7,0.25,tesla,3,0,,0.0,7.2,2.87,Authenticated,0.0,90.0,
+A7,0.25,tesla,4,0,,0.0,9.2,3.25,Authenticated,0.0,90.0,
+A7,0.25,hardened,0,0,,0.0,20.2,3.66,Authenticated,0.009,90.0,
+A7,0.25,hardened,1,0,,0.0,10.8,3.48,Authenticated,0.004,90.0,
+A7,0.25,hardened,2,0,,0.0,8.7,2.9,Authenticated,0.268,90.0,
+A7,0.25,hardened,3,0,,0.0,7.2,2.87,Authenticated,0.101,90.0,
+A7,0.25,hardened,4,0,,0.0,9.2,3.25,Authenticated,0.347,90.0,
+A7,0.5,naive,0,0,,1.0,19360.0,18331.09,Unchecked,0.0,,
+A7,0.5,naive,1,0,,1.0,19533.5,19176.53,Unchecked,0.0,,
+A7,0.5,naive,2,0,,1.0,21343.7,20598.16,Unchecked,0.0,,
+A7,0.5,naive,3,0,,1.0,13274.6,13139.51,Unchecked,0.0,,
+A7,0.5,naive,4,0,,1.0,15739.0,15450.5,Unchecked,0.0,,
+A7,0.5,tesla,0,0,,0.0,34.7,9.26,Authenticated,0.0,90.0,
+A7,0.5,tesla,1,0,,0.0,17.3,5.24,Authenticated,0.0,90.0,
+A7,0.5,tesla,2,0,,0.0,26.6,9.2,Authenticated,0.0,90.0,
+A7,0.5,tesla,3,0,,0.0,9.1,3.99,Authenticated,0.0,90.0,
+A7,0.5,tesla,4,0,,0.0,10.0,4.41,Authenticated,0.0,90.0,
+A7,0.5,hardened,0,0,,0.0,34.7,9.26,Authenticated,0.009,90.0,
+A7,0.5,hardened,1,0,,0.0,17.3,5.24,Authenticated,0.004,90.0,
+A7,0.5,hardened,2,0,,0.0,26.6,9.2,Authenticated,0.268,90.0,
+A7,0.5,hardened,3,0,,0.0,9.1,3.99,Authenticated,0.101,90.0,
+A7,0.5,hardened,4,0,,0.0,10.0,4.41,Authenticated,0.347,90.0,
+A7,0.75,naive,0,0,,1.0,24452.3,24060.88,Unchecked,0.0,,
+A7,0.75,naive,1,0,,1.0,19443.9,19150.75,Unchecked,0.0,,
+A7,0.75,naive,2,0,,1.0,23581.6,23118.98,Unchecked,0.0,,
+A7,0.75,naive,3,0,,1.0,17317.5,16297.45,Unchecked,0.0,,
+A7,0.75,naive,4,0,,1.0,25041.9,24007.4,Unchecked,0.0,,
+A7,0.75,tesla,0,1,0.0,0.0,,,Degraded,0.0,90.0,
+A7,0.75,tesla,1,1,0.0,0.0,,,Degraded,0.0,90.0,
+A7,0.75,tesla,2,1,0.0,0.0,,,Degraded,0.0,90.0,
+A7,0.75,tesla,3,1,0.0,0.0,,,Degraded,0.0,90.0,
+A7,0.75,tesla,4,1,0.0,0.0,,,Degraded,0.0,90.0,
+A7,0.75,hardened,0,1,0.0,0.0,,,Degraded,0.009,90.0,
+A7,0.75,hardened,1,1,0.0,0.0,,,Degraded,0.004,90.0,
+A7,0.75,hardened,2,1,0.0,0.0,,,Degraded,0.268,90.0,
+A7,0.75,hardened,3,1,0.0,0.0,,,Degraded,0.101,90.0,
+A7,0.75,hardened,4,1,0.0,0.0,,,Degraded,0.347,90.0,
+A7,1.0,naive,0,0,,1.0,29988.3,29984.49,Unchecked,0.0,,
+A7,1.0,naive,1,0,,1.0,29989.1,29984.33,Unchecked,0.0,,
+A7,1.0,naive,2,0,,1.0,29988.5,29984.12,Unchecked,0.0,,
+A7,1.0,naive,3,0,,1.0,29988.4,29983.91,Unchecked,0.0,,
+A7,1.0,naive,4,0,,1.0,29988.8,29984.33,Unchecked,0.0,,
+A7,1.0,tesla,0,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,tesla,1,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,tesla,2,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,tesla,3,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,tesla,4,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,hardened,0,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,hardened,1,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,hardened,2,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,hardened,3,1,0.0,0.0,,,Untrusted,0.0,90.0,
+A7,1.0,hardened,4,1,0.0,0.0,,,Untrusted,0.0,90.0,
+clean,0,naive,0,0,,0.0,5.6,5.62,Unchecked,0.0,,
+clean,0,naive,1,0,,0.0,3.9,3.91,Unchecked,0.0,,
+clean,0,naive,2,0,,0.0,0.9,0.86,Unchecked,0.0,,
+clean,0,naive,3,0,,0.0,4.2,4.15,Unchecked,0.0,,
+clean,0,naive,4,0,,0.0,1.0,0.97,Unchecked,0.0,,
+clean,0,tesla,0,0,,0.0,5.6,5.62,Authenticated,0.0,90.0,
+clean,0,tesla,1,0,,0.0,3.9,3.91,Authenticated,0.0,90.0,
+clean,0,tesla,2,0,,0.0,0.9,0.86,Authenticated,0.0,90.0,
+clean,0,tesla,3,0,,0.0,4.2,4.15,Authenticated,0.0,90.0,
+clean,0,tesla,4,0,,0.0,1.0,0.97,Authenticated,0.0,90.0,
+clean,0,hardened,0,0,,0.0,5.6,5.62,Authenticated,0.009,90.0,
+clean,0,hardened,1,0,,0.0,3.9,3.91,Authenticated,0.004,90.0,
+clean,0,hardened,2,0,,0.0,0.9,0.86,Authenticated,0.268,90.0,
+clean,0,hardened,3,0,,0.0,4.2,4.15,Authenticated,0.101,90.0,
+clean,0,hardened,4,0,,0.0,1.0,0.97,Authenticated,0.347,90.0,
