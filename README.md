@@ -21,6 +21,8 @@ make demo-html     # -> demo/demo.html (opens in any browser, works offline)
 
 To show the slides, open `slides/index.html`. Use the arrow keys to move between slides.
 
+A PowerPoint version is in `slides/navic-nma.pptx`. Its charts are native PowerPoint charts. To build it again from `results/`, install `pptxgenjs` and run `make pptx`.
+
 To run one attack manually, use this command:
 
 ```

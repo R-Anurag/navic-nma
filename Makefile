@@ -16,6 +16,9 @@ demo:
 demo-html:
 	$(PY) -m nma.demo --html demo/demo.html
 
+pptx:
+	node slides/build_pptx.js $(APPLY_THEME)
+
 all: test experiments figures demo-html
 
-.PHONY: test experiments figures demo demo-html all
+.PHONY: test experiments figures demo demo-html pptx all
